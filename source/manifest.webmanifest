@@ -1,7 +1,7 @@
 {
-  "name": "HTML Academy: Седона",
-  "short_name": "Седона",
-  "description": "Приложение посвящено замечательному городу в Аризоне - Седона",
+  "name": "HTML Academy: Кэт энэрджи",
+  "short_name": "Кэт энэрджи",
+  "description": "Кэт энэрджи",
   "orientation": "portrait",
   "icons": [
     { "src": "img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
