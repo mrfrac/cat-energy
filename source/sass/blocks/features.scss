@@ -5,10 +5,10 @@
 .features__list-item-icon {
   width: 60px;
   height: 60px;
-  background-color: #68B738;
+  background-color: #68b738;
 }
 
-.features__list-item-icon--leaf:after {
+.features__list-item-icon--leaf::after {
   content: "";
   width: 30px;
   height: 32px;
@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
 }
 
-.features__list-item-icon--tub:after {
+.features__list-item-icon--tub::after {
   content: "";
   width: 29px;
   height: 31px;
@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
 }
 
-.features__list-item-icon--eat:after {
+.features__list-item-icon--eat::after {
   content: "";
   width: 25px;
   height: 30px;
@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
 }
 
-.features__list-item-icon--alarm:after {
+.features__list-item-icon--alarm::after {
   content: "";
   width: 32px;
   height: 33px;
