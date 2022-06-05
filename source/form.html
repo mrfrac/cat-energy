@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font">
 </head>
 <body class="page-body">
-  <header class="main-header main-header--inner">
+  <header class="main-header">
     <div class="main-header__wrapper">
       <a href="index.html" class="main-header__logo">
         <picture>
@@ -26,15 +26,15 @@
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list- site-list">
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link main-nav__list-link--active" href="index.html">Главная</a>
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link" href="form.html">Подбор программы</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -49,78 +49,83 @@
           программу питания для вашего кота
         </p>
       </div>
-      <form class="form__form">
+      <form class="form__form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form__block">
-          <div class="form-control">
-            <label class="form-control__label" for="name">ИМЯ:*</label>
-            <input class="form-control__input" id="name" type="text" name="name" value="барсик" placeholder="Имя"/>
+          <div class="text-control">
+            <label class="text-control__label" for="name">ИМЯ:*</label>
+            <input class="text-control__input" id="name" type="text" name="name" placeholder="барсик" required>
           </div>
-          <div class="form-control">
-            <label class="form-control__label" for="weight">Вес (кг):*</label>
-            <input class="form-control__input" id="weight" type="text" name="weight" value="7" placeholder="Вес"/>
+          <div class="text-control">
+            <label class="text-control__label" for="weight">Вес (кг):*</label>
+            <input class="text-control__input" id="weight" type="number" name="weight" placeholder="7" required>
           </div>
-          <div class="form-control">
-            <label class="form-control__label" for="age">Вес (кг):*</label>
-            <input class="form-control__input" id="age" type="text" name="age" value="7" placeholder="Возраст"/>
+          <div class="text-control">
+            <label class="text-control__label" for="age">Возраст (лет):</label>
+            <input class="text-control__input" id="age" type="number" name="age" placeholder="7">
           </div>
         </fieldset>
         <fieldset class="form__block">
-          <div class="form-control">
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__radio" type="radio" name="slim" value="1" checked>
-              похудение
+          <div class="choose-control">
+            <label class="choose-control__label">
+              <input class="choose-control__input" type="radio" name="purpose" value="1" checked>
+              Похудение
             </label>
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__radio" type="radio" name="weight" value="1">
+          </div>
+          <div class="choose-control">
+            <label class="choose-control__label">
+              <input class="choose-control__input" type="radio" name="purpose" value="2">
               Набор массы
             </label>
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__radio" type="radio" name="question" value="1">
+          </div>
+          <div class="choose-control">
+            <label class="choose-control__label">
+              <input class="choose-control__input" type="radio" name="purpose" value=3">
               Не знаю (Нужен ваш совет)
             </label>
           </div>
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__block-title">Контактные данные (владельца кота)</legend>
-          <div class="form-control">
-            <label class="form-control__label" for="email">E-mail:*</label>
-            <input class="form-control__input" id="email" type="text" name="email" value="kuklachev@gmail.com" placeholder="Имя"/>
+          <div class="text-control">
+            <label class="text-control__label" for="email">E-mail:*</label>
+            <input class="text-control__input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com" required>
           </div>
-          <div class="form-control">
-            <label class="form-control__label" for="phone">Телефон:*</label>
-            <input class="form-control__input" id="phone" type="text" name="phone" value="8 (960) 900-60-90" placeholder="Имя"/>
+          <div class="text-control">
+            <label class="text-control__label" for="phone">Телефон:*</label>
+            <input class="text-control__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
           </div>
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__block-title">Комментарий</legend>
-          <div class="form-control">
-            <textarea class="form-control__textarea" name="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <label class="visually-hidden" for="comments">Комментарий</label>
+          <div class="text-control">
+            <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__block-title">Дополнительно</legend>
-          <div class="form-control">
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__checkbox" type="checkbox" name="sugar" checked/>
-              сахарозаменитель
+          <div class="choose-control">
+            <label class="choose-control__label">
+              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="sugar" checked>
+              Сахарозаменитель
             </label>
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__checkbox" type="checkbox" name="water"/>
-              питьевая вода
+            <label class="choose-control__label">
+              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="water">
+              Питьевая вода
             </label>
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__checkbox" type="checkbox" name="milk"/>
-              молоко
+            <label class="choose-control__label">
+              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="milk">
+              Молоко
             </label>
-            <label class="form-control__label form-control__label--flat">
-              <input class="form-control__checkbox" type="checkbox" name="vitamins"/>
-              витамины
+            <label class="choose-control__label">
+              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="vitamins">
+              Витамины
             </label>
           </div>
         </fieldset>
         <div class="form__submit-area">
-          <button class="button button--send-review" type="submit">отправить заявку</button>
-          <span class="form__submit-area-note">* — Обязательные поля</span>
+          <button class="button form__submit-button" type="submit">Отправить заявку</button>
+          <span class="form__submit-note">* — Обязательные поля</span>
         </div>
       </form>
     </div>
@@ -129,13 +134,13 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <section class="address">
-        <h1 class="address__title">приглашаем к сотрудничеству дилеров!</h1>
+        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
         <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
         <span class="address__city">Санкт-Петербург</span>
       </section>
       <iframe class="main-footer__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300328!2d30.32085871630256!3d59.93871916905388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1654169577358!5m2!1sru!2sru"
-              width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
       <div class="main-footer__bottom-container">
         <div class="main-footer__logo">
@@ -152,7 +157,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="social__item">
               <a class="social__item-link" href="https://web.telegram.org/" aria-label="Наш канал в телеграм">
                 <svg width="28" height="22">
@@ -160,7 +164,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="social__item">
               <a class="social__item-link" href="https://youtube.com" aria-label="Наш канал YouTube">
                 <svg width="28" height="22">
@@ -171,9 +174,9 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" viewBox="0 0 35 42">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 35 42">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
