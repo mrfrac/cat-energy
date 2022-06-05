@@ -13,120 +13,120 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font">
 </head>
 <body class="page-body">
-<header class="main-header main-header--inner">
-<div class="main-header__wrapper">
-  <a href="index.html" class="main-header__logo">
-    <picture>
-      <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-      <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Cat Energy">
-    </picture>
-    <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
-  </a>
-</div>
-<nav class="main-nav">
-  <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  <ul class="main-nav__list- site-list">
-    <li class="main-nav__list-item">
-      <a class="main-nav__list-link main-nav__list-link--active" href="index.html">Главная</a>
-    </li>
-    <li class="main-nav__list-item">
-      <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
-    </li>
-    <li class="main-nav__list-item">
-      <a class="main-nav__list-link" href="form.html">Подбор программы</a>
-    </li>
-  </ul>
-</nav>
-</header>
-
-<main class="main-container form">
-  <div class="form__wrapper">
-    <div class="form__header">
-      <h1 class="form__header-title">Подбор программы</h1>
-      <p class="form__header-description">
-        Заполните анкету, и мы подберем <br>
-        программу питания для вашего кота
-      </p>
+  <header class="main-header main-header--inner">
+    <div class="main-header__wrapper">
+      <a href="index.html" class="main-header__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Cat Energy">
+        </picture>
+        <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+      </a>
     </div>
-    <form class="form__form">
-      <fieldset class="form__block">
-        <div class="form-control">
-          <label class="form-control__label" for="name">ИМЯ:*</label>
-          <input class="form-control__input" id="name" type="text" name="name" value="барсик" placeholder="Имя"/>
-        </div>
-        <div class="form-control">
-          <label class="form-control__label" for="weight">Вес (кг):*</label>
-          <input class="form-control__input" id="weight" type="text" name="weight" value="7" placeholder="Вес"/>
-        </div>
-        <div class="form-control">
-          <label class="form-control__label" for="age">Вес (кг):*</label>
-          <input class="form-control__input" id="age" type="text" name="age" value="7" placeholder="Возраст"/>
-        </div>
-      </fieldset>
-      <fieldset class="form__block">
-        <div class="form-control">
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__radio" type="radio" name="slim" value="1" checked>
-            похудение
-          </label>
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__radio" type="radio" name="weight" value="1">
-            Набор массы
-          </label>
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__radio" type="radio" name="question" value="1">
-            Не знаю (Нужен ваш совет)
-          </label>
-        </div>
-      </fieldset>
-      <fieldset class="form__block">
-        <legend class="form__block-title">Контактные данные (владельца кота)</legend>
-        <div class="form-control">
-          <label class="form-control__label" for="email">E-mail:*</label>
-          <input class="form-control__input" id="email" type="text" name="email" value="kuklachev@gmail.com" placeholder="Имя"/>
-        </div>
-        <div class="form-control">
-          <label class="form-control__label" for="phone">Телефон:*</label>
-          <input class="form-control__input" id="phone" type="text" name="phone" value="8 (960) 900-60-90" placeholder="Имя"/>
-        </div>
-      </fieldset>
-      <fieldset class="form__block">
-        <legend class="form__block-title">Комментарий</legend>
-        <div class="form-control">
-          <textarea class="form-control__textarea" name="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
-        </div>
-      </fieldset>
-      <fieldset class="form__block">
-        <legend class="form__block-title">Дополнительно</legend>
-        <div class="form-control">
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__checkbox" type="checkbox" name="sugar" checked/>
-            сахарозаменитель
-          </label>
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__checkbox" type="checkbox" name="water"/>
-            питьевая вода
-          </label>
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__checkbox" type="checkbox" name="milk"/>
-            молоко
-          </label>
-          <label class="form-control__label form-control__label--flat">
-            <input class="form-control__checkbox" type="checkbox" name="vitamins"/>
-            витамины
-          </label>
-        </div>
-      </fieldset>
-      <div class="form__submit-area">
-        <button class="button button--send-review" type="submit">отправить заявку</button>
-        <span class="form__submit-area-note">* — Обязательные поля</span>
-      </div>
-    </form>
-  </div>
-</main>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list- site-list">
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__list-link--active" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<footer class="main-footer">
+  <main class="main-container form">
+    <div class="form__wrapper">
+      <div class="form__header">
+        <h1 class="form__header-title">Подбор программы</h1>
+        <p class="form__header-description">
+          Заполните анкету, и мы подберем <br>
+          программу питания для вашего кота
+        </p>
+      </div>
+      <form class="form__form">
+        <fieldset class="form__block">
+          <div class="form-control">
+            <label class="form-control__label" for="name">ИМЯ:*</label>
+            <input class="form-control__input" id="name" type="text" name="name" value="барсик" placeholder="Имя"/>
+          </div>
+          <div class="form-control">
+            <label class="form-control__label" for="weight">Вес (кг):*</label>
+            <input class="form-control__input" id="weight" type="text" name="weight" value="7" placeholder="Вес"/>
+          </div>
+          <div class="form-control">
+            <label class="form-control__label" for="age">Вес (кг):*</label>
+            <input class="form-control__input" id="age" type="text" name="age" value="7" placeholder="Возраст"/>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <div class="form-control">
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__radio" type="radio" name="slim" value="1" checked>
+              похудение
+            </label>
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__radio" type="radio" name="weight" value="1">
+              Набор массы
+            </label>
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__radio" type="radio" name="question" value="1">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block-title">Контактные данные (владельца кота)</legend>
+          <div class="form-control">
+            <label class="form-control__label" for="email">E-mail:*</label>
+            <input class="form-control__input" id="email" type="text" name="email" value="kuklachev@gmail.com" placeholder="Имя"/>
+          </div>
+          <div class="form-control">
+            <label class="form-control__label" for="phone">Телефон:*</label>
+            <input class="form-control__input" id="phone" type="text" name="phone" value="8 (960) 900-60-90" placeholder="Имя"/>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block-title">Комментарий</legend>
+          <div class="form-control">
+            <textarea class="form-control__textarea" name="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block-title">Дополнительно</legend>
+          <div class="form-control">
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__checkbox" type="checkbox" name="sugar" checked/>
+              сахарозаменитель
+            </label>
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__checkbox" type="checkbox" name="water"/>
+              питьевая вода
+            </label>
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__checkbox" type="checkbox" name="milk"/>
+              молоко
+            </label>
+            <label class="form-control__label form-control__label--flat">
+              <input class="form-control__checkbox" type="checkbox" name="vitamins"/>
+              витамины
+            </label>
+          </div>
+        </fieldset>
+        <div class="form__submit-area">
+          <button class="button button--send-review" type="submit">отправить заявку</button>
+          <span class="form__submit-area-note">* — Обязательные поля</span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="main-footer">
     <div class="main-footer__wrapper">
       <section class="address">
         <h1 class="address__title">приглашаем к сотрудничеству дилеров!</h1>
@@ -134,8 +134,8 @@
         <span class="address__city">Санкт-Петербург</span>
       </section>
       <iframe class="main-footer__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300328!2d30.32085871630256!3d59.93871916905388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1654169577358!5m2!1sru!2sru"
-              width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300328!2d30.32085871630256!3d59.93871916905388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1654169577358!5m2!1sru!2sru"
+        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
       <div class="main-footer__bottom-container">
         <div class="main-footer__logo">
