@@ -1,53 +1,39 @@
-.features__list-item {
+.features__item {
   position: relative;
-}
 
-.features__list-item-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-}
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.features__list-item-icon--leaf::after {
-  content: "";
-  width: 30px;
-  height: 32px;
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  background-image: url("../img/icons/leaf.svg");
-  background-repeat: no-repeat;
-}
+  &--leaf {
+    &::after {
+      background-image: url("../img/icons/leaf.svg");
+    }
+  }
 
-.features__list-item-icon--tub::after {
-  content: "";
-  width: 29px;
-  height: 31px;
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  background-image: url("../img/icons/tub.svg");
-  background-repeat: no-repeat;
-}
+  &--tub {
+    &::after {
+      background-image: url("../img/icons/tub.svg");
+    }
+  }
 
-.features__list-item-icon--eat::after {
-  content: "";
-  width: 25px;
-  height: 30px;
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  background-image: url("../img/icons/eat.svg");
-  background-repeat: no-repeat;
-}
+  &--eat {
+    &::after {
+      background-image: url("../img/icons/eat.svg");
+    }
+  }
 
-.features__list-item-icon--alarm::after {
-  content: "";
-  width: 32px;
-  height: 33px;
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  background-image: url("../img/icons/alarm.svg");
-  background-repeat: no-repeat;
+  &--alarm {
+    &::after {
+      background-image: url("../img/icons/alarm.svg");
+    }
+  }
 }
