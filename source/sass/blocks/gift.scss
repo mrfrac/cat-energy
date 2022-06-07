@@ -1,0 +1,26 @@
+.gift__container {
+  width: 280px;
+  padding-bottom: 290px;
+  background: url("../img/gift-bg-mobile.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/gift-bg-mobile@2x.jpg") no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/gift-bg-tablet.jpg") no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-bg-tablet@2x.jpg") no-repeat;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background: url("../img/icons/gift.svg") no-repeat;
+  }
+}
