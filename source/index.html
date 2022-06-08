@@ -15,7 +15,7 @@
 <body class="page-body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a href="index.html" class="main-header__logo">
+      <a class="main-header__logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -23,21 +23,21 @@
         </picture>
         <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
       </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="main-container">
@@ -119,15 +119,15 @@
         <div class="example-slider">
           <div class="example-slider__container">
             <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="img/fat-cat.webp 1x, img/fat-cat@2x.webp">
-              <source media="(min-width: 768px)" srcset="img/fat-cat.png 1x, img/fat-cat@2x.png">
-              <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/fat-cat.webp 1x, img/fat-cat@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/fat-cat.png 1x, img/fat-cat@2x.png 2x">
+              <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x">
               <img class="example-slider__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="232">
             </picture>
             <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="img/slim-cat.webp 1x, img/slim-cat@2x.webp">
-              <source media="(min-width: 768px)" srcset="img/slim-cat.png 1x, img/slim-cat@2x.png">
-              <source type="image/webp" srcset="img/slim-cat-mobile.webp 1x, img/slim-cat-mobile@2x.webp">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/slim-cat.webp 1x, img/slim-cat@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/slim-cat.png 1x, img/slim-cat@2x.png 2x">
+              <source type="image/webp" srcset="img/slim-cat-mobile.webp 1x, img/slim-cat-mobile@2x.webp 2x">
               <img class="example-slider__image" src="img/slim-cat-mobile.png" srcset="img/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="243" height="232">
             </picture>
           </div>

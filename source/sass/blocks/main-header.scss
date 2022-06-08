@@ -1,17 +1,25 @@
+.main-header__wrapper {
+  // display: flex;
+}
+
 .main-header__logo-image {
-  @media (min-width: $tablet-width) {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 20px;
+
+  @include tablet {
     width: 174px;
     height: 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: 202px;
     height: 59px;
   }
 }
 
 .main-header__logo-text {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: none;
   }
 }
