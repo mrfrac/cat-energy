@@ -1,0 +1,93 @@
+.example__wrapper {
+  background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
+
+  @include tablet {
+    background-color: #ffffff;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "description description"
+      "info slider";
+    justify-content: space-between;
+  }
+}
+
+.example__title {
+  @include mobile-only {
+    background-color: #eaeaea;
+  }
+
+  @include tablet {
+    background-color: #ffffff;
+  }
+
+  @include desktop {
+    grid-area: title;
+  }
+}
+
+.example__description {
+  @include desktop {
+    grid-area: description;
+  }
+}
+
+.example__info-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    grid-area: info;
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
+
+.example__info-list {
+  @include clear-list-styles;
+  display: flex;
+}
+
+.example__item {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  padding-top: 14px;
+  margin-right: 32px;
+
+  &-value {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  &-label {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 87px;
+    position: relative;
+    left: 19px;
+    top: 22px;
+    background-color: #ffffff;
+
+    @include mobile-only {
+      background-color: #eaeaea;
+    }
+  }
+}
+
+.example-slider {
+  @include desktop {
+    grid-area: slider;
+    position: relative;
+    right: 0;
+  }
+}

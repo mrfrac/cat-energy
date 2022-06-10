@@ -1,10 +1,32 @@
 .main-nav {
   height: 65px;
-  padding: 20px 10px 17px;
-  background-color: tomato;
   width: 100%;
+  flex: 1 1 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 24px;
+  height: 16px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .main-nav__list {
-  display: none;
+  @include clear-list-styles;
+
+  @include mobile-only {
+    position: absolute;
+    margin: 65px 0 0;
+    left: 0;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }

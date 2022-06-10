@@ -1,0 +1,29 @@
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title street"
+    "title city";
+
+  @include desktop {
+    position: relative;
+    left: 100px;
+    width: 565px;
+    top: 200px;
+    background-color: #ffffff;
+  }
+}
+
+.address__title {
+  @include r-s16-h20;
+
+  grid-area: title;
+}
+
+.address__street {
+  grid-area: street;
+}
+
+.address__city {
+  grid-area: city;
+}

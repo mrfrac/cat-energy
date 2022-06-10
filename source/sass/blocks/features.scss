@@ -1,5 +1,25 @@
+.features__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.features__list {
+  @include clear-list-styles;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
 .features__item {
   position: relative;
+  padding-bottom: 20px;
+  padding-left: 80px;
 
   &::after {
     content: "";

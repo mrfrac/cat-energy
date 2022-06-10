@@ -1,0 +1,6 @@
+.social__list {
+  @include clear-list-styles;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

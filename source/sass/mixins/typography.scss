@@ -1,0 +1,27 @@
+@mixin typography-template($font-size, $line-height, $font-weight: 400) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: normal;
+  line-height: $line-height;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+@mixin r-s36-h36 {
+  @include typography-template(36px, 36px);
+}
+
+@mixin r-s60-h60 {
+  @include typography-template(60px, 60px);
+}
+
+@mixin r-s14-h14 {
+  @include typography-template(14px, 14px);
+}
+
+@mixin r-s20-h20 {
+  @include typography-template(20px, 20px);
+}
+
+@mixin r-s16-h20 {
+  @include typography-template(16px, 20px);
+}

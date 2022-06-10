@@ -1,0 +1,55 @@
+.intro {
+  margin-top: 75px; // TODO: переделать. временное решение
+}
+
+.intro__wrapper {
+  min-width: 249px;
+  text-align: center;
+  padding: 27px 35px 114px 36px;
+
+  @include mobile-only {
+    background-image: url("../img/intro-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 135px;
+  }
+}
+
+.intro__title {
+  @include r-s36-h36;
+
+  margin: 0;
+  color: #ffffff;
+
+  @include tablet {
+    @include r-s60-h60;
+
+    color: #000000;
+  }
+}
+
+.intro__description {
+  @include r-s14-h14;
+
+  margin-top: 25px;
+  color: #ffffff;
+
+  @include tablet {
+    @include r-s20-h20;
+    color: #000000;
+  }
+}
+
+.intro__intro-image {
+  @include mobile-only {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include tablet {
+    width: 709px;
+    height: 609px;
+  }
+}
