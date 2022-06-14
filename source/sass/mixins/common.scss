@@ -1,5 +1,10 @@
-@mixin clear-list-styles {
-  padding: 0;
+@mixin clear-margin {
   margin: 0;
+}
+
+@mixin clear-list-styles {
+  @include clear-margin;
+
+  padding: 0;
   list-style: none;
 }

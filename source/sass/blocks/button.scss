@@ -1,0 +1,20 @@
+.button {
+  @include r-s14-h18;
+
+  display: block;
+  width: 100%;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+
+  @include mobile-only {
+    padding: 14px 0;
+  }
+
+  @include tablet {
+    @include r-s20-h0;
+
+    padding: 14px 0;
+  }
+}

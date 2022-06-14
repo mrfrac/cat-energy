@@ -3,8 +3,17 @@
   padding-right: 20px;
 }
 
+.features__title {
+  @include r-s36-h40;
+  @include clear-margin;
+
+  margin-bottom: 40px;
+}
+
 .features__list {
   @include clear-list-styles;
+
+  padding-bottom: 39px;
 
   @include tablet {
     display: grid;
@@ -17,6 +26,9 @@
 }
 
 .features__item {
+  @include r-s14-h18;
+  font-family: "Arial", sans-serif;
+
   position: relative;
   padding-bottom: 20px;
   padding-left: 80px;

@@ -1,15 +1,22 @@
 .main-nav {
-  height: 65px;
+  /*height: 65px;
   width: 100%;
-  flex: 1 1 0;
+  flex: 1 1 0;*/
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 24px;
-  right: 20px;
   width: 24px;
   height: 16px;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 0;
+  border: 0;
+
+  &::before {
+    content: url("../img/icons/burger-open.svg");
+    width: 24px;
+    height: 16px;
+  }
 
   @include tablet {
     display: none;
@@ -20,6 +27,7 @@
   @include clear-list-styles;
 
   @include mobile-only {
+    display: none;
     position: absolute;
     margin: 65px 0 0;
     left: 0;

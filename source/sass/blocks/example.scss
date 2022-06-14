@@ -18,6 +18,9 @@
 }
 
 .example__title {
+  @include clear-margin;
+  @include r-s36-h40;
+
   @include mobile-only {
     background-color: #eaeaea;
   }
@@ -32,6 +35,12 @@
 }
 
 .example__description {
+  @include r-s14-h18;
+  font-family: "Arial", sans-serif;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+
   @include desktop {
     grid-area: description;
   }
@@ -56,27 +65,42 @@
 }
 
 .example__item {
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
+  border: 2px solid #cdcdcd;
+  border-radius: 6px;
   width: 124px;
-  padding-top: 14px;
+  height: 56px;
   margin-right: 32px;
 
   &-value {
+    @include r-s24-h24;
+
     padding: 0;
-    margin: 0;
     text-align: center;
+    margin: 14px 0 7px;
   }
 
   &-label {
+    @include r-s12-h12;
+    font-family: "Arial", sans-serif;
+
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 87px;
     position: relative;
-    left: 19px;
-    top: 22px;
+    top: 0;
     background-color: #ffffff;
+
+    &--weight {
+      width: 77px;
+      left: 14px;
+      margin-right: 6px;
+      margin-left: 4px;
+    }
+
+    &--days {
+      width: 59px;
+      left: 24px;
+    }
 
     @include mobile-only {
       background-color: #eaeaea;

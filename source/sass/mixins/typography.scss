@@ -6,22 +6,50 @@
   font-family: "Oswald", "Arial", sans-serif;
 }
 
-@mixin r-s36-h36 {
-  @include typography-template(36px, 36px);
-}
-
-@mixin r-s60-h60 {
-  @include typography-template(60px, 60px);
+@mixin r-s12-h12 {
+  @include typography-template(12px, 12px);
 }
 
 @mixin r-s14-h14 {
   @include typography-template(14px, 14px);
 }
 
-@mixin r-s20-h20 {
-  @include typography-template(20px, 20px);
+@mixin r-s14-h18 {
+  @include typography-template(14px, 18px);
+}
+
+@mixin r-s16-h16 {
+  @include typography-template(16px, 16px);
 }
 
 @mixin r-s16-h20 {
   @include typography-template(16px, 20px);
+}
+
+@mixin r-s20-h0 {
+  @include typography-template(20px, 0);
+}
+
+@mixin r-s20-h20 {
+  @include typography-template(20px, 20px);
+}
+
+@mixin r-s24-h24 {
+  @include typography-template(24px, 24px);
+}
+
+@mixin r-s24-h37 {
+  @include typography-template(24px, 37px);
+}
+
+@mixin r-s36-h36 {
+  @include typography-template(36px, 36px);
+}
+
+@mixin r-s36-h40 {
+  @include typography-template(36px, 40px);
+}
+
+@mixin r-s60-h60 {
+  @include typography-template(60px, 60px);
 }
