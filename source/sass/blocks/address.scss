@@ -2,6 +2,12 @@
   @include r-s14-h20;
 
   font-family: "Arial", sans-serif;
+
+  @include tablet {
+    @include r-s16-h20;
+
+    font-family: "Arial", sans-serif;
+  }
 }
 
 .address {
@@ -11,6 +17,10 @@
   grid-template-areas:
     "title street"
     "title city";
+
+  @include tablet {
+    padding: 60px 70px 56px 70px;
+  }
 
   @include desktop {
     position: relative;
@@ -27,16 +37,36 @@
 
   grid-area: title;
   text-transform: uppercase;
+
+  @include tablet {
+    @include r-s20-h26;
+
+    width: 172px;
+  }
 }
 
 .address__street {
   @include address_text;
 
   grid-area: street;
+
+  @include tablet {
+    width: 160px;
+    justify-self: right;
+    align-self: baseline;
+    text-align: right;
+  }
 }
 
 .address__city {
   @include address_text;
 
   grid-area: city;
+
+  @include tablet {
+    width: 160px;
+    justify-self: right;
+    align-self: end;
+    text-align: right;
+  }
 }

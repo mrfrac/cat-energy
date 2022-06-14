@@ -34,6 +34,14 @@
   @include typography-template(16px, 20px);
 }
 
+@mixin r-s16-h24 {
+  @include typography-template(16px, 24px);
+}
+
+@mixin r-s18-h24 {
+  @include typography-template(18px, 24px);
+}
+
 @mixin r-s20-h0 {
   @include typography-template(20px, 0);
 }
@@ -42,12 +50,24 @@
   @include typography-template(20px, 20px);
 }
 
+@mixin r-s20-h26 {
+  @include typography-template(20px, 26px);
+}
+
+@mixin r-s20-h30 {
+  @include typography-template(20px, 30px);
+}
+
 @mixin r-s24-h24 {
   @include typography-template(24px, 24px);
 }
 
 @mixin r-s24-h37 {
   @include typography-template(24px, 37px);
+}
+
+@mixin r-s30-h37 {
+  @include typography-template(30px, 37px);
 }
 
 @mixin r-s36-h36 {

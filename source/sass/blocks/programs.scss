@@ -1,5 +1,11 @@
 .programs__wrapper {
   padding: 20px 20px 0;
+
+  @include tablet {
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .programs__list {
@@ -27,8 +33,17 @@
     width: 50px;
     height: 53px;
     left: 2px;
-    top: -9;
+    top: -9px;
     background: url("../img/icons/slim-catalog.svg") center no-repeat;
+
+    @include tablet {
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+      left: -34px;
+      top: 0;
+      float: right;
+    }
   }
 
   &--pro::before {
@@ -37,6 +52,20 @@
     left: -7px;
     top: -6px;
     background: url("../img/icons/pro-catalog.svg") center no-repeat;
+
+    @include tablet {
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+      left: 0;
+      top: 31px;
+      float: right;
+    }
+  }
+
+  @include tablet {
+    padding: 77px 28px 53px 53px;
+    margin-bottom: 30px;
   }
 }
 
@@ -45,6 +74,13 @@
 
   text-transform: uppercase;
   margin: 0 0 29px 91px;
+
+  @include tablet {
+    @include r-s36-h36;
+
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .programs__description {
@@ -54,6 +90,15 @@
   margin: 39px 0 0 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @include tablet {
+    @include r-s16-h24;
+
+    font-family: "Arial", sans-serif;
+    margin-right: 315px;
+    padding-bottom: unset;
+    border-bottom: unset;
+  }
 }
 
 .programs__button {
@@ -72,5 +117,11 @@
     height: 15px;
     display: inline-block;
     margin-left: 15px;
+  }
+
+  @include tablet {
+    @include r-s20-h30;
+
+    margin-top: 48px;
   }
 }

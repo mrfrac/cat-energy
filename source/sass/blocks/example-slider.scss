@@ -1,8 +1,31 @@
 .example-slider {
+  @include tablet {
+    background-color: #eaeaea;
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 462px;
+  }
+
   @include desktop {
     grid-area: slider;
     position: relative;
     right: 0;
+  }
+}
+
+.example-slider__container {
+  text-align: center;
+
+  @include tablet {
+    position: relative;
+    bottom: 165px;
+  }
+}
+
+.example-slider__image {
+  @include tablet {
+    height: 511px;
+    width: auto;
   }
 }
 
@@ -17,9 +40,15 @@
   &-range {
     width: 86px;
   }
+
+  @include tablet {
+    width: 77%;
+    position: relative;
+    bottom: 155px;
+  }
 }
 .example-slider__control-range {
-  width: 86px;
+  width: 100%;
   background-color: #fff;
   height: 14px;
   border-radius: 6px;
@@ -35,6 +64,24 @@
     top: 50%;
     left: 6px;
     transform: translateY(-50%);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.example-slider__control-range[type=range] {
+  @include mobile-only {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
   }
 }
 
@@ -49,4 +96,8 @@
   border: none;
   color: #000000;
   background-color: #eaeaea;
+
+  @include tablet {
+    @include r-s20-h30;
+  }
 }

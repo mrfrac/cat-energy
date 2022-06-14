@@ -7,13 +7,15 @@
   padding: 10px 20px 0;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet {
+    padding: 24px 30px;
+  }
 }
 
 .main-header__text-link {
   display: block;
-  // flex: 1 1 0;
   align-self: center;
-  // text-align: center;
 
   @include tablet {
     display: none;
@@ -21,15 +23,11 @@
 }
 
 .main-header__logo-link {
-  // flex: 1 1 0;
   display: block;
 }
 
 .main-header__logo-image {
   display: block;
-  // margin-top: 10px;
-  // margin-left: 20px;
-  // flex: 1 1 0;
 
   @include tablet {
     width: 174px;

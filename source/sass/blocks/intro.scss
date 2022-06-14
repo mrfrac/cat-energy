@@ -9,6 +9,12 @@
     background-position: top;
     background-size: 320px 302px;
   }
+
+  @include tablet {
+    padding-top: 62px;
+    padding-left: 29px;
+    padding-right: 30px;
+  }
 }
 
 .intro__title {
@@ -20,7 +26,9 @@
   @include tablet {
     @include r-s60-h60;
 
+    text-align: left;
     color: #000000;
+    margin-left: 89px;
   }
 }
 
@@ -35,7 +43,11 @@
 
   @include tablet {
     @include r-s20-h20;
+
     color: #000000;
+    text-align: left;
+    margin-left: 89px;
+    margin-bottom: 20px;
   }
 }
 
@@ -47,6 +59,12 @@
 }
 
 .intro__selection-button {
-  display: block;
   margin-top: 3px;
+
+  @include tablet {
+    width: 34%;
+    position: absolute;
+    top: 340px;
+    left: 117px;
+  }
 }

@@ -1,6 +1,11 @@
 .features__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
+  @include tablet {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .features__title {
@@ -8,16 +13,27 @@
   @include clear-margin;
 
   margin-bottom: 40px;
+
+  @include tablet {
+    @include r-s60-h60;
+
+    margin-top: 15px;
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
   @include clear-list-styles;
 
   padding-bottom: 39px;
+  counter-reset: feature-number;
 
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 37px;
+    grid-column-gap: 153px;
+    padding-bottom: 84px;
   }
 
   @include desktop {
@@ -35,14 +51,20 @@
 
   &::after {
     content: "";
-    width: 60px;
-    height: 60px;
     background-color: #68b738;
     position: absolute;
+    width: 60px;
+    height: 60px;
     top: 0;
     left: 0;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+    }
   }
 
   &--leaf {
@@ -66,6 +88,29 @@
   &--alarm {
     &::after {
       background-image: url("../img/icons/alarm.svg");
+    }
+  }
+
+  @include tablet {
+    @include r-s16-h24;
+    font-family: "Arial", sans-serif;
+
+    width: 235px;
+    padding-top: 151px;
+    padding-left: 0;
+    min-height: 50px;
+
+    &::before {
+      counter-increment: feature-number;
+      content: counter(feature-number);
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      top: 0;
+      left: 118px;
+      z-index: -10;
+      font-family: "Oswald", "Arial", sans-serif;
     }
   }
 }
