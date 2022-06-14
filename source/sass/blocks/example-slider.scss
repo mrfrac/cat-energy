@@ -37,10 +37,6 @@
   column-gap: 13px;
   justify-content: space-between;
 
-  &-range {
-    width: 86px;
-  }
-
   @include tablet {
     width: 77%;
     position: relative;
