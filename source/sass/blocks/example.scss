@@ -1,11 +1,11 @@
 .example__wrapper {
-  background-color: #eaeaea;
+  background-color: $basic-gray;
   padding: 25px 20px 40px 20px;
 
   @include tablet {
     background-color: #ffffff;
     padding: 43px 30px 0 30px;
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
   }
 
   @include desktop {
@@ -24,7 +24,7 @@
   @include r-s36-h40;
 
   @include mobile-only {
-    background-color: #eaeaea;
+    background-color: $basic-gray;
   }
 
   @include tablet {
@@ -48,7 +48,7 @@
   @include tablet {
     @include r-s16-h24;
 
-    font-family: "Arial", "sans-serif";
+    font-family: "Arial", sans-serif;
     margin-top: 63px;
     margin-bottom: 54px;
     margin-right: 10px;
@@ -101,7 +101,7 @@
     display: block;
     margin: 0 auto -14px;
     width: 87px;
-    background-color: #eaeaea;
+    background-color: $basic-gray;
 
     @include tablet {
       @include r-s14-h14;

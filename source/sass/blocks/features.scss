@@ -52,7 +52,7 @@
 
   &::after {
     content: "";
-    background-color: #68b738;
+    background-color: $basic-green;
     position: absolute;
     width: 60px;
     height: 60px;
@@ -105,7 +105,7 @@
       content: counter(feature-number);
       font-size: 280px;
       line-height: 280px;
-      color: #f2f2f2;
+      color: $light-gray;
       position: absolute;
       top: 0;
       left: 118px;
