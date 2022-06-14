@@ -1,0 +1,52 @@
+.example-slider {
+  @include desktop {
+    grid-area: slider;
+    position: relative;
+    right: 0;
+  }
+}
+
+.example-slider__control {
+  width: calc((100% / 3) * 2);
+  margin: 15px auto 0;
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+  justify-content: space-between;
+
+  &-range {
+    width: 86px;
+  }
+}
+.example-slider__control-range {
+  width: 86px;
+  background-color: #fff;
+  height: 14px;
+  border-radius: 6px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 6px;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+  }
+}
+
+.example-slider__control-button {
+  @include clear-margin;
+  @include clear-padding;
+  @include r-s16-h20;
+
+  width: 49px;
+  height: 30px;
+  text-transform: uppercase;
+  border: none;
+  color: #000000;
+  background-color: #eaeaea;
+}

@@ -1,4 +1,11 @@
+@mixin address_text {
+  @include r-s14-h20;
+
+  font-family: "Arial", sans-serif;
+}
+
 .address {
+  padding: 26px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -16,14 +23,20 @@
 
 .address__title {
   @include r-s16-h20;
+  @include clear-margin;
 
   grid-area: title;
+  text-transform: uppercase;
 }
 
 .address__street {
+  @include address_text;
+
   grid-area: street;
 }
 
 .address__city {
+  @include address_text;
+
   grid-area: city;
 }

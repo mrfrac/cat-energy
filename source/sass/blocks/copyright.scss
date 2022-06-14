@@ -3,3 +3,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.copyright__text {
+  @include r-s16-h18;
+
+  font-family: "Arial", sans-serif;
+}

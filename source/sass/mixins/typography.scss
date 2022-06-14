@@ -18,8 +18,16 @@
   @include typography-template(14px, 18px);
 }
 
+@mixin r-s14-h20 {
+  @include typography-template(14px, 20px);
+}
+
 @mixin r-s16-h16 {
   @include typography-template(16px, 16px);
+}
+
+@mixin r-s16-h18 {
+  @include typography-template(16px, 19px);
 }
 
 @mixin r-s16-h20 {
