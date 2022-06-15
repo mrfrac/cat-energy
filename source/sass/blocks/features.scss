@@ -6,6 +6,11 @@
     padding-right: 30px;
     padding-left: 30px;
   }
+
+  @include desktop {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
 
 .features__title {
@@ -20,6 +25,10 @@
     margin-top: 15px;
     margin-bottom: 32px;
   }
+
+  @include desktop {
+    margin-top: 41px;
+  }
 }
 
 .features__list {
@@ -32,12 +41,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 37px;
-    grid-column-gap: 153px;
+    grid-column-gap: 20%;
     padding-bottom: 84px;
   }
 
   @include desktop {
     display: flex;
+    column-gap: 94px;
+    justify-content: space-between;
   }
 }
 

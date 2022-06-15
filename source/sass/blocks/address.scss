@@ -23,11 +23,12 @@
   }
 
   @include desktop {
-    position: relative;
-    left: 100px;
     width: 565px;
-    top: 200px;
     background-color: #ffffff;
+    position: absolute;
+    bottom: 30%;
+    left: 110px;
+    transform: translateY(-50%);
   }
 }
 

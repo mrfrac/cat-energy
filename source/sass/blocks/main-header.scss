@@ -11,6 +11,10 @@
   @include tablet {
     padding: 24px 30px;
   }
+
+  @include desktop {
+    padding: 53px 110px 32px;
+  }
 }
 
 .main-header__text-link {

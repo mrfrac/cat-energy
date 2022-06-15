@@ -10,4 +10,8 @@
   @include r-s16-h18;
 
   font-family: "Arial", sans-serif;
+
+  @include tablet {
+    margin-right: 22px;
+  }
 }

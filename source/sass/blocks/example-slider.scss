@@ -4,12 +4,14 @@
     margin-left: -30px;
     margin-right: -30px;
     height: 462px;
+    margin-top: 216px;
   }
 
   @include desktop {
     grid-area: slider;
     position: relative;
     right: 0;
+    background-color: unset;
   }
 }
 
@@ -26,6 +28,10 @@
   @include tablet {
     height: 511px;
     width: auto;
+  }
+
+  @include desktop {
+    margin-top: -80px
   }
 }
 
