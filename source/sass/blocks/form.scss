@@ -1,0 +1,109 @@
+@mixin form-paddings {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form {
+  border-top: 1px solid #d9d9d9;
+}
+
+.form__header {
+  padding: 27px 20px 39px;
+
+  &-title {
+    @include clear-margin;
+    @include r-s36-h36;
+  }
+
+  &-description {
+    @include r-s14-h18;
+    @include clear-margin;
+
+    margin-top: 37px;
+    text-transform: uppercase;
+  }
+}
+
+.form__block {
+  @include clear-padding;
+
+  border: none;
+
+  &--bordered {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.form__info {
+  @include form-paddings;
+
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 24px;
+}
+
+.form__purpose {
+  @include form-paddings;
+
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.form__contacts {
+  @include clear-padding;
+  @include clear-margin;
+  @include form-paddings;
+
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  .form__block-title {
+    @include r-s24-h26;
+
+    width: 187px;
+    display: inline;
+    padding-top: 26px;
+    padding-bottom: 15px;
+  }
+}
+
+.form__comment {
+  @include clear-padding;
+  @include clear-margin;
+  @include form-paddings;
+
+  padding-top: 24px;
+  padding-bottom: 23px;
+
+  .form__block-title {
+    @include r-s24-h26;
+
+    width: 121px;
+  }
+}
+
+.form__more {
+  @include clear-padding;
+  @include clear-margin;
+  @include form-paddings;
+
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  .form__block-title {
+    @include r-s24-h26;
+
+    width: 147px;
+  }
+}
+
+.form__submit-area {
+  @include form-paddings;
+
+  padding-bottom: 32px;
+}
+
+.form__submit-note {
+  display: block;
+  margin-top: 21px;
+}

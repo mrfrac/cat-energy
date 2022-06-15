@@ -62,6 +62,10 @@
   @include typography-template(24px, 24px);
 }
 
+@mixin r-s24-h26 {
+  @include typography-template(24px, 26px);
+}
+
 @mixin r-s24-h37 {
   @include typography-template(24px, 37px);
 }
