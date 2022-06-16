@@ -6,6 +6,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  border: none;
 
   @include mobile-only {
     padding: 14px 0;

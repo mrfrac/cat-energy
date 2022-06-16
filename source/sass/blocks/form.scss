@@ -1,6 +1,15 @@
-@mixin form-paddings {
+@mixin default-form-block {
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+}
+
+@mixin default-block-title($width: 100%) {
+  @include r-s24-h26;
+  @include clear-padding;
+
+  width: $width;
+  display: block;
 }
 
 .form {
@@ -26,6 +35,7 @@
 
 .form__block {
   @include clear-padding;
+  @include clear-margin;
 
   border: none;
 
@@ -35,75 +45,92 @@
 }
 
 .form__info {
-  @include form-paddings;
+  @include default-form-block;
 
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 24px;
+
+  .text-control {
+    margin-bottom: 14px;
+  }
 }
 
 .form__purpose {
-  @include form-paddings;
+  @include default-form-block;
 
   border-bottom: 1px solid #d9d9d9;
   padding-top: 22px;
-  padding-bottom: 19px;
+  padding-bottom: 6px;
+
+  .choose-control {
+    margin-bottom: 13px;
+  }
 }
 
 .form__contacts {
-  @include clear-padding;
-  @include clear-margin;
-  @include form-paddings;
+  @include default-form-block;
 
   padding-top: 26px;
   padding-bottom: 24px;
 
   .form__block-title {
-    @include r-s24-h26;
+    @include default-block-title(187px);
 
-    width: 187px;
-    display: inline;
-    padding-top: 26px;
-    padding-bottom: 15px;
+    margin-bottom: 35px;
+  }
+
+  .text-control {
+    margin-bottom: 14px;
   }
 }
 
 .form__comment {
-  @include clear-padding;
-  @include clear-margin;
-  @include form-paddings;
+  @include default-form-block;
 
-  padding-top: 24px;
   padding-bottom: 23px;
 
   .form__block-title {
-    @include r-s24-h26;
+    @include default-block-title(121px);
 
-    width: 121px;
+    margin-bottom: 38px;
   }
 }
 
 .form__more {
-  @include clear-padding;
-  @include clear-margin;
-  @include form-paddings;
+  @include default-form-block;
 
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 23px;
+  padding-bottom: 21px;
 
   .form__block-title {
-    @include r-s24-h26;
+    @include default-block-title(147px);
 
-    width: 147px;
+    margin-bottom: 33px;
+  }
+
+  &-list {
+    @include clear-list-styles;
+  }
+
+  &-item {
+    display: block;
+
+    margin-bottom: 13px;
   }
 }
 
 .form__submit-area {
-  @include form-paddings;
+  @include default-form-block;
 
   padding-bottom: 32px;
+  text-align: center;
 }
 
 .form__submit-note {
   display: block;
   margin-top: 21px;
+}
+
+.form__submit-button {
+  width: 100%;
 }

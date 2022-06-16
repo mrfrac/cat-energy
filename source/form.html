@@ -15,14 +15,14 @@
 <body class="page-body">
 <header class="main-header">
   <div class="main-header__wrapper">
-    <a class="main-header__logo-link">
+    <a class="main-header__logo-link" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Cat Energy">
       </picture>
     </a>
-    <a class="main-header__text-link">
+    <a class="main-header__text-link" href="index.html">
       <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
     </a>
     <nav class="main-nav">
@@ -87,41 +87,63 @@
           </div>
         </fieldset>
         <fieldset class="form__block form__contacts">
-          <legend class="form__block-title">Контактные данные (владельца кота)</legend>
-          <div class="text-control">
-            <label class="text-control__label" for="email">E-mail:*</label>
-            <input class="text-control__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="text-control">
-            <label class="text-control__label" for="phone">Телефон:*</label>
-            <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          <div class="form__block-wrapper">
+            <legend class="form__block-title">Контактные данные (владельца кота)</legend>
+            <div class="text-control">
+              <label class="text-control__label" for="email">E-mail:*</label>
+              <input class="text-control__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="text-control">
+              <label class="text-control__label" for="phone">Телефон:*</label>
+              <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__block form__comment">
-          <legend class="form__block-title">Комментарий</legend>
-          <div class="text-control">
-            <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__block-wrapper">
+            <legend class="form__block-title">Комментарий</legend>
+            <div class="text-control">
+              <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__block form__more">
-          <legend class="form__block-title">Дополнительно</legend>
-          <div class="choose-control">
-            <label class="choose-control__label">
-              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="sugar" checked>
-              Сахарозаменитель
-            </label>
-            <label class="choose-control__label">
-              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="water">
-              Питьевая вода
-            </label>
-            <label class="choose-control__label">
-              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="milk">
-              Молоко
-            </label>
-            <label class="choose-control__label">
-              <input class="choose-control__input choose-control__input--checkbox" type="checkbox" name="vitamins">
-              Витамины
-            </label>
+          <div class="form__block-wrapper">
+            <legend class="form__block-title">Дополнительно</legend>
+            <ul class="form__more-list">
+              <li class="form__more-item">
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="sugar" name="sugar" checked>
+                  <label class="choose-control__label" for="sugar">
+                    Сахарозаменитель
+                  </label>
+                </div>
+              </li>
+              <li class="form__more-item">
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="water" name="water">
+                  <label class="choose-control__label" for="water">
+                    Питьевая вода
+                  </label>
+                </div>
+              </li>
+              <li class="form__more-item">
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="milk" name="milk">
+                  <label class="choose-control__label" for="milk">
+                    Молоко
+                  </label>
+                </div>
+              </li>
+              <li class="form__more-item">
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="vitamins" name="vitamins">
+                  <label class="choose-control__label" for="vitamins">
+                    Витамины
+                  </label>
+                </div>
+              </li>
+            </ul>
           </div>
         </fieldset>
         <div class="form__submit-area">
@@ -134,7 +156,7 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <section class="address">
+      <section class="address address--gray">
         <h2 class="address__title">Приглашаем <span class="tablet-br"><br></span> к сотрудничеству дилеров!</h2>
         <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
         <span class="address__city">Санкт-Петербург</span>

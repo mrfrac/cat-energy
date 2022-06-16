@@ -18,6 +18,10 @@
     "title street"
     "title city";
 
+  &--gray {
+    background-color: $light-gray;
+  }
+
   @include tablet {
     padding: 60px 70px 56px 70px;
   }
@@ -38,6 +42,7 @@
 
   grid-area: title;
   text-transform: uppercase;
+  color: #111111;
 
   @include tablet {
     @include r-s20-h26;
@@ -50,6 +55,7 @@
   @include address_text;
 
   grid-area: street;
+  color: #444444;
 
   @include tablet {
     width: 160px;
@@ -63,6 +69,7 @@
   @include address_text;
 
   grid-area: city;
+  color: #444444;
 
   @include tablet {
     width: 160px;
