@@ -52,52 +52,56 @@
         </p>
       </div>
       <form class="form__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__block form__info">
-          <div class="text-control">
-            <label class="text-control__label" for="name">ИМЯ:*</label>
-            <input class="text-control__input" id="name" type="text" name="name" placeholder="барсик" required>
-          </div>
-          <div class="text-control">
-            <label class="text-control__label" for="weight">Вес (кг):*</label>
-            <input class="text-control__input" id="weight" type="number" name="weight" placeholder="7" required>
-          </div>
-          <div class="text-control">
-            <label class="text-control__label" for="age">Возраст (лет):</label>
-            <input class="text-control__input" id="age" type="number" name="age" placeholder="7">
-          </div>
-        </fieldset>
-        <fieldset class="form__block form__purpose">
-          <div class="form__block-wrapper">
-            <div class="choose-control">
-              <input class="choose-control__input" type="radio" id="slim" name="purpose" value="1" checked>
-              <label class="choose-control__label" for="slim">
-                Похудение
-              </label>
+        <div class="form__main-blocks">
+          <fieldset class="form__block form__info">
+            <div class="text-control">
+              <label class="text-control__label" for="name">ИМЯ:*</label>
+              <input class="text-control__input" id="name" type="text" name="name" placeholder="барсик" required>
             </div>
-            <div class="choose-control">
-              <input class="choose-control__input" type="radio" id="weight-radio" name="purpose" value="2">
-              <label class="choose-control__label" for="weight-radio">
-                Набор массы
-              </label>
+            <div class="text-control">
+              <label class="text-control__label" for="weight">Вес (кг):*</label>
+              <input class="text-control__input" id="weight" type="number" name="weight" placeholder="7" required>
             </div>
-            <div class="choose-control">
-              <input class="choose-control__input" type="radio" id="dont-know" name="purpose" value="3">
-              <label class="choose-control__label" for="dont-know">
-                Не знаю (Нужен ваш совет)
-              </label>
+            <div class="text-control">
+              <label class="text-control__label" for="age">Возраст (лет):</label>
+              <input class="text-control__input" id="age" type="number" name="age" placeholder="7">
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
+          <fieldset class="form__block form__purpose">
+            <div class="form__block-wrapper">
+              <div class="choose-control">
+                <input class="choose-control__input" type="radio" id="slim" name="purpose" value="1" checked>
+                <label class="choose-control__label" for="slim">
+                  Похудение
+                </label>
+              </div>
+              <div class="choose-control">
+                <input class="choose-control__input" type="radio" id="weight-radio" name="purpose" value="2">
+                <label class="choose-control__label" for="weight-radio">
+                  Набор массы
+                </label>
+              </div>
+              <div class="choose-control">
+                <input class="choose-control__input" type="radio" id="dont-know" name="purpose" value="3">
+                <label class="choose-control__label" for="dont-know">
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__block form__contacts">
           <div class="form__block-wrapper">
             <legend class="form__block-title">Контактные данные (владельца кота)</legend>
-            <div class="text-control">
-              <label class="text-control__label" for="email">E-mail:*</label>
-              <input class="text-control__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </div>
-            <div class="text-control">
-              <label class="text-control__label" for="phone">Телефон:*</label>
-              <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <div class="form__contacts-list">
+              <div class="text-control">
+                <label class="text-control__label" for="email">E-mail:*</label>
+                <input class="text-control__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="text-control">
+                <label class="text-control__label" for="phone">Телефон:*</label>
+                <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
           </div>
         </fieldset>

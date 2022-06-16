@@ -43,7 +43,13 @@
 
   @include desktop {
     @include r-s20-h30;
+  }
+}
 
-    color: #ffffff;
+.main-nav--index {
+  .main-nav__link {
+    @include desktop {
+      color: #ffffff;
+    }
   }
 }
