@@ -8,6 +8,10 @@
     text-transform: uppercase;
     margin-right: 13px;
     min-width: fit-content;
+
+    @include tablet {
+      @include r-s20-h30;
+    }
   }
 
   &__input {
