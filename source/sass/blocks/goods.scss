@@ -1,0 +1,37 @@
+.goods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "description price"
+    "button button";
+
+  &__title {
+    @include clear-margin;
+    @include r-s16-h16;
+
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  &__description {
+    @include r-s14-h14;
+
+    font-family: "Arial", sans-serif;
+    grid-area: description;
+  }
+
+  &__price {
+    @include r-s14-h14;
+
+    font-family: "Arial", sans-serif;
+    grid-area: price;
+    text-align: right;
+  }
+
+  &__button {
+    grid-area: button;
+
+    margin-top: 15px;
+  }
+}

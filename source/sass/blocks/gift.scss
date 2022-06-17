@@ -1,8 +1,25 @@
+.gift {
+  padding: 35px 20px;
+
+  &__description {
+    @include r-s16-h20;
+    @include clear-margin;
+
+    font-family: "Arial", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    bottom: 43px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .gift__container {
-  width: 280px;
+  width: 100%;
   padding-bottom: 290px;
   background: url("../img/gift-bg-mobile.jpg") no-repeat;
   background-size: cover;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/gift-bg-mobile@2x.jpg") no-repeat;
@@ -22,5 +39,8 @@
     width: 78px;
     height: 80px;
     background: url("../img/icons/gift.svg") no-repeat;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

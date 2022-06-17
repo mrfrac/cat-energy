@@ -1,0 +1,22 @@
+.more-goods__wrapper {
+  padding: 25px 20px 0;
+}
+
+.more-goods__title {
+  @include r-s24-h24;
+
+  margin: 0;
+}
+
+.more-goods__list {
+  @include clear-list-styles;
+
+  margin-top: 36px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.more-goods__item {
+  padding-top: 12px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+}
