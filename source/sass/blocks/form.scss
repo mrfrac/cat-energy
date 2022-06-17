@@ -89,6 +89,41 @@
   border: none;
 }
 
+.form__block-title--lined {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: calc(100vw - 20px);
+    height: 2px;
+    background-color: $basic-green;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1;
+
+    @include tablet {
+      width: 100vw;
+      left: -70px;
+      //transform: translateX(-50%);
+    }
+  }
+}
+
+.form__block-title-text {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  padding: 0 20px;
+  margin-left: -20px;
+
+  @include tablet {
+    padding: 0 40px;
+    margin-left: -40px;
+  }
+}
+
 .form__info {
   @include default-form-block;
 
@@ -156,12 +191,12 @@
   }
 
   .form__block-title {
-    @include default-block-title(187px);
+    @include default-block-title(207px);
 
     margin-bottom: 35px;
 
     @include tablet {
-      width: 515px;
+      width: 562px;
       margin-right: 0;
       margin-bottom: 76px;
     }
@@ -190,12 +225,12 @@
   padding-bottom: 23px;
 
   .form__block-title {
-    @include default-block-title(121px);
+    @include default-block-title(141px);
 
     margin-bottom: 38px;
 
     @include tablet {
-      width: 185px;
+      width: 225px;
       margin-bottom: 76px;
     }
   }
@@ -218,9 +253,13 @@
   padding-bottom: 21px;
 
   .form__block-title {
-    @include default-block-title(147px);
+    @include default-block-title(161px);
 
     margin-bottom: 33px;
+
+    @include tablet {
+      width: 251px;
+    }
 
     @include desktop {
       margin-bottom: 57px;
