@@ -12,6 +12,10 @@
 
     text-transform: uppercase;
     margin-bottom: 13px;
+
+    @include tablet {
+      @include r-s20-h20;
+    }
   }
 
   &__description {
@@ -19,6 +23,13 @@
 
     font-family: "Arial", sans-serif;
     grid-area: description;
+
+    @include tablet {
+      @include r-s16-h20;
+
+      font-family: "Arial", sans-serif;
+      text-align: right;
+    }
   }
 
   &__price {
@@ -27,11 +38,28 @@
     font-family: "Arial", sans-serif;
     grid-area: price;
     text-align: right;
+
+    @include tablet {
+      @include r-s16-h20;
+
+      font-family: "Arial", sans-serif;
+    }
   }
 
   &__button {
     grid-area: button;
 
     margin-top: 15px;
+
+    @include tablet {
+      margin-top: 25px;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 93px;
+    grid-template-areas:
+      "title description price"
+      "button button button";
   }
 }

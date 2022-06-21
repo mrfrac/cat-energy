@@ -1,4 +1,9 @@
 .page-body {
   font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
+
+  @include desktop {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }

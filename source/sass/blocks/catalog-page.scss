@@ -1,11 +1,23 @@
 .catalog-page__wrapper {
   border-top: 1px solid #d9d9d9;
+
+  @include tablet {
+    border-top: unset;
+  }
 }
 
 .catalog-page__title {
   @include r-s36-h36;
   @include clear-margin;
+
   margin-bottom: 41px;
   margin-left: 20px;
   margin-top: 27px;
+
+  @include tablet {
+    @include r-s60-h60;
+
+    margin-top: 77px;
+    margin-bottom: 82px;
+  }
 }
