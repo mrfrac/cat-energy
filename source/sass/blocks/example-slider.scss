@@ -91,7 +91,7 @@
 .example-slider__control-button {
   @include clear-margin;
   @include clear-padding;
-  @include r-s16-h20;
+  @include mr-s16-h20;
 
   width: 49px;
   height: 30px;
@@ -101,6 +101,6 @@
   background-color: $basic-gray;
 
   @include tablet {
-    @include r-s20-h30;
+    @include mr-s20-h30;
   }
 }

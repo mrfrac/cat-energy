@@ -8,41 +8,36 @@
 
   &__title {
     @include clear-margin;
-    @include r-s16-h16;
+    @include mr-s16-h16;
 
     text-transform: uppercase;
     margin-bottom: 13px;
 
     @include tablet {
-      @include r-s20-h20;
+      @include mr-s20-h20;
     }
   }
 
   &__description {
-    @include r-s14-h14;
+    @include sr-s14-h14;
 
-    font-family: "Arial", sans-serif;
     grid-area: description;
 
     @include tablet {
-      @include r-s16-h20;
+      @include sr-s16-h20;
 
-      font-family: "Arial", sans-serif;
       text-align: right;
     }
   }
 
   &__price {
-    @include r-s14-h14;
+    @include sr-s14-h14;
 
-    font-family: "Arial", sans-serif;
     grid-area: price;
     text-align: right;
 
     @include tablet {
-      @include r-s16-h20;
-
-      font-family: "Arial", sans-serif;
+      @include sr-s16-h20;
     }
   }
 

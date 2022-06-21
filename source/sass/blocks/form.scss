@@ -5,14 +5,14 @@
 }
 
 @mixin default-block-title($width: 100%) {
-  @include r-s24-h26;
+  @include mr-s24-h26;
   @include clear-padding;
 
   width: $width;
   display: block;
 
   @include tablet {
-    @include r-s36-h36;
+    @include mr-s36-h36;
   }
 }
 
@@ -39,10 +39,10 @@
 
   &-title {
     @include clear-margin;
-    @include r-s36-h36;
+    @include mr-s36-h36;
 
     @include tablet {
-      @include r-s60-h60;
+      @include mr-s60-h60;
 
       margin-left: 69px;
     }
@@ -54,14 +54,14 @@
   }
 
   &-description {
-    @include r-s14-h18;
+    @include mr-s14-h18;
     @include clear-margin;
 
     margin-top: 37px;
     text-transform: uppercase;
 
     @include tablet {
-      @include r-s20-h30;
+      @include mr-s20-h30;
 
       margin-left: 70px;
       margin-top: 54px;

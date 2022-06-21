@@ -24,14 +24,14 @@
 
 .example__title {
   @include clear-margin;
-  @include r-s36-h40;
+  @include mr-s36-h40;
 
   @include mobile-only {
     background-color: $basic-gray;
   }
 
   @include tablet {
-    @include r-s60-h60;
+    @include mr-s60-h60;
 
     background-color: #ffffff;
   }
@@ -42,16 +42,14 @@
 }
 
 .example__description {
-  @include r-s14-h18;
-  font-family: "Arial", sans-serif;
+  @include sr-s14-h18;
 
   margin-top: 40px;
   margin-bottom: 20px;
 
   @include tablet {
-    @include r-s16-h24;
+    @include mr-s16-h24;
 
-    font-family: "Arial", sans-serif;
     margin-top: 63px;
     margin-bottom: 54px;
     margin-right: 10px;
@@ -105,18 +103,16 @@
 
   &-label {
     @include clear-margin;
-    @include r-s12-h12;
+    @include sr-s12-h12;
 
-    font-family: "Arial", sans-serif;
     display: block;
     margin: 0 auto -14px;
     width: 87px;
     background-color: $basic-gray;
 
     @include tablet {
-      @include r-s14-h14;
+      @include sr-s14-h14;
 
-      font-family: "Arial", sans-serif;
       background-color: #ffffff;
       width: 127px;
     }
@@ -128,13 +124,13 @@
 
   &-value {
     @include clear-margin;
-    @include r-s24-h24;
+    @include mr-s24-h24;
 
     display: block;
     padding-bottom: 8px;
 
     @include tablet {
-      @include r-s30-h37;
+      @include mr-s30-h37;
     }
   }
 
@@ -149,7 +145,7 @@
 
 .example__cost {
   @include clear-margin;
-  @include r-s14-h20;
+  @include mr-s14-h20;
 
   margin-left: 46px;
   margin-bottom: 40px;
@@ -178,7 +174,7 @@
   }
 
   @include tablet {
-    @include r-s20-h20;
+    @include mr-s20-h20;
 
     text-align: right;
   }

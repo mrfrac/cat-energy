@@ -97,13 +97,13 @@
 }
 
 .programs__title {
-  @include r-s24-h37;
+  @include mr-s24-h37;
 
   text-transform: uppercase;
   margin: 0 0 29px 91px;
 
   @include tablet {
-    @include r-s36-h36;
+    @include mr-s36-h36;
 
     margin-left: 0;
     text-align: left;
@@ -117,17 +117,15 @@
 }
 
 .programs__description {
-  @include r-s14-h18;
+  @include sr-s14-h18;
 
-  font-family: "Arial", sans-serif;
   margin: 39px 0 0 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
   @include tablet {
-    @include r-s16-h24;
+    @include sr-s16-h24;
 
-    font-family: "Arial", sans-serif;
     margin-right: 315px;
     padding-bottom: unset;
     border-bottom: unset;
@@ -141,7 +139,7 @@
 }
 
 .programs__button {
-  @include r-s16-h16;
+  @include mr-s16-h16;
 
   display: block;
   margin-top: 15px;
@@ -159,7 +157,7 @@
   }
 
   @include tablet {
-    @include r-s20-h30;
+    @include mr-s20-h30;
 
     margin-top: 48px;
   }

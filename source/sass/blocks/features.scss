@@ -14,13 +14,13 @@
 }
 
 .features__title {
-  @include r-s36-h40;
+  @include mr-s36-h40;
   @include clear-margin;
 
   margin-bottom: 40px;
 
   @include tablet {
-    @include r-s60-h60;
+    @include mr-s60-h60;
 
     margin-top: 15px;
     margin-bottom: 32px;
@@ -53,8 +53,7 @@
 }
 
 .features__item {
-  @include r-s14-h18;
-  font-family: "Arial", sans-serif;
+  @include sr-s14-h18;
 
   position: relative;
   padding-bottom: 20px;
@@ -104,8 +103,7 @@
   }
 
   @include tablet {
-    @include r-s16-h24;
-    font-family: "Arial", sans-serif;
+    @include sr-s16-h24;
 
     width: 235px;
     padding-top: 151px;
@@ -121,7 +119,7 @@
       top: 0;
       left: 118px;
       z-index: -10;
-      font-family: "Oswald", "Arial", sans-serif;
+      font-family: $main-font-family;
     }
   }
 }

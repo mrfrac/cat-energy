@@ -1,12 +1,8 @@
 @mixin address_text {
-  @include r-s14-h20;
-
-  font-family: "Arial", sans-serif;
+  @include mr-s14-h20;
 
   @include tablet {
-    @include r-s16-h20;
-
-    font-family: "Arial", sans-serif;
+    @include mr-s16-h20;
   }
 }
 
@@ -37,7 +33,7 @@
 }
 
 .address__title {
-  @include r-s16-h20;
+  @include mr-s16-h20;
   @include clear-margin;
 
   grid-area: title;
@@ -45,7 +41,7 @@
   color: #111111;
 
   @include tablet {
-    @include r-s20-h26;
+    @include mr-s20-h26;
 
     width: 172px;
   }

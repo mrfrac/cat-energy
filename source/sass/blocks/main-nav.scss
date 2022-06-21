@@ -35,14 +35,14 @@
 }
 
 .main-nav__link {
-  @include r-s18-h24;
+  @include mr-s18-h24;
 
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
 
   @include desktop {
-    @include r-s20-h30;
+    @include mr-s20-h30;
   }
 }
 

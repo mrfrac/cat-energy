@@ -2,10 +2,9 @@
   padding: 35px 20px;
 
   &__description {
-    @include r-s16-h20;
+    @include sr-s16-h20;
     @include clear-margin;
 
-    font-family: "Arial", sans-serif;
     color: #ffffff;
     position: absolute;
     bottom: 43px;
@@ -13,9 +12,8 @@
     text-align: center;
 
     @include tablet {
-      @include r-s16-h20;
+      @include sr-s16-h20;
 
-      font-family: "Arial", sans-serif;
       right: 124px;
       top: 71px;
       display: block;

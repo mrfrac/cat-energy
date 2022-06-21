@@ -7,9 +7,7 @@
 }
 
 .copyright__text {
-  @include r-s16-h18;
-
-  font-family: "Arial", sans-serif;
+  @include sr-s16-h18;
 
   @include tablet {
     margin-right: 22px;

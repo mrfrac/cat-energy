@@ -7,12 +7,12 @@
 }
 
 .more-goods__title {
-  @include r-s24-h24;
+  @include mr-s24-h24;
 
   margin: 0;
 
   @include tablet {
-    @include r-s36-h36;
+    @include mr-s36-h36;
 
     margin-left: 36px;
   }

@@ -3,12 +3,12 @@
   align-items: center;
 
   &__label {
-    @include r-s16-h18;
+    @include mr-s16-h18;
 
     text-transform: uppercase;
 
     @include tablet {
-      @include r-s20-h30;
+      @include mr-s20-h30;
     }
   }
 }

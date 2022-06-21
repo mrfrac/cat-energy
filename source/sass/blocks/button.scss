@@ -1,5 +1,5 @@
 .button {
-  @include r-s14-h18;
+  @include mr-s14-h18;
 
   display: block;
   background-color: $basic-green;
@@ -14,7 +14,7 @@
   }
 
   @include tablet {
-    @include r-s20-h20;
+    @include mr-s20-h20;
 
     padding: 17px 0;
   }
