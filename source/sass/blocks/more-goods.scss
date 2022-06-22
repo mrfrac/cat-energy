@@ -4,6 +4,10 @@
   @include tablet {
     padding: 68px 30px 0;
   }
+
+  @include desktop {
+    padding: 76px 79px 0 110px;
+  }
 }
 
 .more-goods__title {
@@ -15,6 +19,10 @@
     @include mr-s36-h36;
 
     margin-left: 36px;
+  }
+
+  @include desktop {
+    margin-left: 0;
   }
 }
 
@@ -28,6 +36,15 @@
     margin-top: 80px;
     border: 1px solid #cdcdcd;
   }
+
+  @include desktop {
+    margin-top: 81px;
+    border-bottom: unset;
+    border-left: unset;
+    border-right: unset;
+    border-top: 1px solid #cdcdcd;
+    width: 896px;
+  }
 }
 
 .more-goods__item {
@@ -37,5 +54,9 @@
 
   @include tablet {
     padding: 26px 38px 28px;
+  }
+
+  @include desktop {
+    padding: 15px 0 17px;
   }
 }

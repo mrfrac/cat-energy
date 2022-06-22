@@ -20,4 +20,12 @@
     margin-top: 77px;
     margin-bottom: 82px;
   }
+
+  @include desktop {
+    @include mr-s60-h60;
+
+    margin-left: 110px;
+    margin-top: 144px;
+    margin-bottom: 118px;
+  }
 }

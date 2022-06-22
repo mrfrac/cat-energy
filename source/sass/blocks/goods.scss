@@ -16,6 +16,11 @@
     @include tablet {
       @include mr-s20-h20;
     }
+
+    @include desktop {
+      width: 324px;
+      margin-bottom: 0;
+    }
   }
 
   &__description {
@@ -28,6 +33,11 @@
 
       text-align: right;
     }
+
+    @include desktop {
+      width: 244px;
+      text-align: left;
+    }
   }
 
   &__price {
@@ -39,6 +49,11 @@
     @include tablet {
       @include sr-s16-h20;
     }
+
+    @include desktop {
+      width: 82px;
+      text-align: left;
+    }
   }
 
   &__button {
@@ -49,6 +64,11 @@
     @include tablet {
       margin-top: 25px;
     }
+
+    @include desktop {
+      margin-top: 0;
+      width: 244px;
+    }
   }
 
   @include tablet {
@@ -56,5 +76,19 @@
     grid-template-areas:
       "title description price"
       "button button button";
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.goods__button--small {
+  @include desktop {
+    @include mr-s16-h20;
+
+    padding-top: 7px;
+    padding-bottom: 12px;
   }
 }

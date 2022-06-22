@@ -16,6 +16,14 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+
+    padding-left: 110px;
+    padding-right: 110px;
+    grid-column-gap: 80px;
+  }
 }
 
 .catalog__item {
