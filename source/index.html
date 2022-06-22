@@ -122,18 +122,22 @@
         </div>
         <div class="example-slider">
           <div class="example-slider__container">
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-progress-tablet.webp, img/cat-progress-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/cat-progress-tablet.png, img/cat-progress-tablet@2x.png 2x">
-              <source type="image/webp" srcset="img/fat-cat-mobile.webp, img/fat-cat-mobile@2x.webp 2x">
-              <img class="example-slider__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="232">
+            <div class="example-slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/fat-cat.webp, img/fat-cat@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/fat-cat.png, img/fat-cat@2x.png 2x">
+                <source type="image/webp" srcset="img/fat-cat-mobile.webp, img/fat-cat-mobile@2x.webp 2x">
+                <img class="example-slider__image example-slider__image--fat" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="Упитанный кот" width="280" height="232">
+              </picture>
+            </div>
+            <div class="example-slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/slim-cat.webp, img/slim-cat@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/slim-cat.png, img/slim-cat@2x.png 2x">
+                <source type="image/webp" srcset="img/slim-cat-mobile.webp, img/slim-cat-mobile@2x.webp 2x">
+                <img class="example-slider__image example-slider__image--slim" src="img/slim-cat-mobile.png" srcset="img/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="243" height="232">
             </picture>
-            <!--<picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="img/slim-cat.webp, img/slim-cat@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/slim-cat.png, img/slim-cat@2x.png 2x">
-              <source type="image/webp" srcset="img/slim-cat-mobile.webp, img/slim-cat-mobile@2x.webp 2x">
-              <img class="example-slider__image" src="img/slim-cat-mobile.png" srcset="img/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="243" height="232">
-            </picture>-->
+            </div>
           </div>
           <div class="example-slider__control">
             <button class="example-slider__control-button" type="button">Было</button>
