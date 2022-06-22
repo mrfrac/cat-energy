@@ -118,12 +118,8 @@
     @include tablet {
       @include sr-s14-h14;
 
-      background-color: #ffffff;
-      width: 127px;
-    }
-
-    @include desktop {
       background-color: $light-gray;
+      width: 127px;
     }
   }
 
