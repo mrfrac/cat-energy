@@ -1,3 +1,7 @@
+.programs {
+  @include default-block;
+}
+
 .programs__wrapper {
   padding: 20px 20px 0;
 

@@ -10,6 +10,8 @@
 
 .main-header {
   height: 65px;
+
+  @include default-block;
 }
 
 .main-header__wrapper {

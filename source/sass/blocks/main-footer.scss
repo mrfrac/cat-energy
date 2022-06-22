@@ -14,6 +14,12 @@
 }
 
 .main-footer__bottom-container {
+  @include desktop {
+    background-color: #f2f2f2;
+  }
+}
+
+.main-footer__bottom-wrapper {
   padding: 39px 20px 22px;
   background-color: $light-gray;
 
@@ -26,6 +32,8 @@
 
   @include desktop {
     padding: 57px 110px 58px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 

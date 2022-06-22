@@ -23,10 +23,10 @@
   }
 
   @include desktop {
-    width: 565px;
+    width: 425px;
     background-color: #ffffff;
     position: absolute;
-    bottom: 30%;
+    top: 165px;
     left: 110px;
     transform: translateY(-50%);
   }

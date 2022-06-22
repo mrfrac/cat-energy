@@ -1,4 +1,6 @@
 .intro {
+  @include default-block;
+
   @include desktop {
     &::after {
       content: "";
