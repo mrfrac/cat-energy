@@ -101,7 +101,17 @@
   text-transform: uppercase;
   border: none;
   color: #000000;
-  background-color: $basic-gray;
+  background-color: transparent;
+  border-bottom: 1px dotted rgba(#000000, 0.24);
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid rgba(#000000, 0.4);
+  }
+
+  &:active {
+    border-bottom: unset;
+  }
 
   @include tablet {
     @include mr-s20-h30;

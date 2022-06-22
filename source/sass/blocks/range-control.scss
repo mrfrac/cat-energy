@@ -40,7 +40,7 @@
   margin-top: 3.5px;
 
   @include tablet {
-    box-shadow: 1px 1px 1px #cdcdcd;
+    box-shadow: 0 0 0 1px #cdcdcd;
     border: 13px solid #ffffff;
     height: 34px;
     width: 34px;
