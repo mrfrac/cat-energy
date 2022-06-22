@@ -18,7 +18,7 @@
     justify-content: space-between;
     border-top: unset;
     padding: 0 110px 0 110px;
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 28%, #f2f2f2 28%, #f2f2f2 100%);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 136px, #f2f2f2 136px, #f2f2f2 100%);
   }
 }
 
@@ -48,7 +48,7 @@
   margin-bottom: 20px;
 
   @include tablet {
-    @include mr-s16-h24;
+    @include sr-s16-h24;
 
     margin-top: 63px;
     margin-bottom: 54px;
