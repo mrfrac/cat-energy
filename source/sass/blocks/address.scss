@@ -51,7 +51,7 @@
   @include address_text;
 
   grid-area: street;
-  color: #444444;
+  color: $dark-gray;
 
   @include tablet {
     width: 160px;
@@ -65,7 +65,7 @@
   @include address_text;
 
   grid-area: city;
-  color: #444444;
+  color: $dark-gray;
 
   @include tablet {
     width: 160px;

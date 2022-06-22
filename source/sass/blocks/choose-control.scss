@@ -28,7 +28,7 @@
     border-radius: 100%;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-gray;
   }
 
   &--checkbox:checked::before,

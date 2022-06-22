@@ -19,21 +19,21 @@
 
     width: 100%;
     border: 1px solid #e7e7e7;
-    color: #444444;
+    color: $dark-gray;
     padding: 0 14px;
     height: 45px;
     text-transform: uppercase;
 
     &::placeholder {
-      color: #444444;
+      color: $dark-gray;
     }
 
     &:hover {
-      border-color: #cdcdcd;
+      border-color: $border-gray;
     }
 
     &:focus {
-      border: 2px solid #444444;
+      border: 2px solid $dark-gray;
     }
 
     &:invalid {

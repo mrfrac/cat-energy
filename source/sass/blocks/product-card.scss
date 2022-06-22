@@ -80,7 +80,7 @@
 
     padding-bottom: 9px;
     padding-top: 7px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-gray;
   }
 }
 
@@ -99,7 +99,7 @@
 
 .product-card__show-more-link {
   text-decoration: none;
-  color: #444444;
+  color: $dark-gray;
 }
 
 .product-card__show-more-title {
@@ -133,14 +133,14 @@
 
 .product-card__show-more-button {
   background-color: #f2f2f2;
-  color: #444444;
+  color: $dark-gray;
 
   &:hover {
     background-color: #ebebeb;
   }
 
   &:active {
-    color: rgba(#444444, 0.3);
+    color: rgba($dark-gray, 0.3);
   }
 }
 

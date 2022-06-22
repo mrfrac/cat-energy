@@ -19,7 +19,7 @@
   cursor: pointer;
   background: #ffffff;
   border-radius: 6px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $border-gray;
 
   @include tablet {
     height: 6px;
@@ -40,7 +40,7 @@
   margin-top: 3.5px;
 
   @include tablet {
-    box-shadow: 0 0 0 1px #cdcdcd;
+    box-shadow: 0 0 0 1px $border-gray;
     border: 13px solid #ffffff;
     height: 34px;
     width: 34px;
@@ -63,14 +63,14 @@
   cursor: pointer;
   background: #ffffff;
   border-radius: 6px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $border-gray;
 
   @include tablet {
     height: 6px;
     cursor: pointer;
     background: #dcdcdc;
     border-radius: 6px;
-    border: 0 solid #cdcdcd;
+    border: 0 solid $border-gray;
   }
 }
 
@@ -84,7 +84,7 @@
   cursor: pointer;
 
   @include tablet {
-    box-shadow: 1px 1px 0 #cdcdcd;
+    box-shadow: 1px 1px 0 $border-gray;
     border: 10px solid #ffffff;
     height: 34px;
     width: 34px;

@@ -48,11 +48,11 @@
   @include clear-list-styles;
 
   margin-top: 36px;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $border-gray;
 
   @include tablet {
     margin-top: 80px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-gray;
   }
 
   @include desktop {
@@ -60,7 +60,7 @@
     border-bottom: unset;
     border-left: unset;
     border-right: unset;
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $border-gray;
     width: 896px;
   }
 }
@@ -68,7 +68,7 @@
 .more-goods__item {
   padding-top: 12px;
   padding-bottom: 19px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $border-gray;
 
   @include tablet {
     padding: 26px 38px 28px;
