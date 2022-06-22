@@ -92,29 +92,9 @@
 }
 
 .form__block-title--lined {
+  @include green-line;
+
   position: relative;
-
-  &::before {
-    content: "";
-    width: calc(100vw - 20px);
-    height: 2px;
-    background-color: $basic-green;
-    position: absolute;
-    top: 16px;
-    left: 0;
-    z-index: 1;
-
-    @include tablet {
-      width: 100vw;
-      left: -70px;
-      top: 21px;
-    }
-
-    @include desktop {
-      left: -110px;
-      max-width: 1440px;
-    }
-  }
 }
 
 .form__block-title-text {
