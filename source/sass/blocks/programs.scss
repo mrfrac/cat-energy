@@ -28,7 +28,7 @@
 
 .programs__item {
   background-color: $light-gray;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 23px;
   margin-bottom: 20px;
 
   &::before {
@@ -104,7 +104,7 @@
   @include mr-s24-h37;
 
   text-transform: uppercase;
-  margin: 0 0 29px 91px;
+  margin: 0 0 29px 71px;
 
   @include tablet {
     @include mr-s36-h36;
@@ -123,7 +123,7 @@
 .programs__description {
   @include sr-s14-h18;
 
-  margin: 39px 0 0 0;
+  margin: 29px 0 0 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
@@ -146,7 +146,7 @@
   @include mr-s16-h16;
 
   display: block;
-  margin-top: 15px;
+  margin-top: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -155,11 +155,12 @@
     content: "";
     background-image: url("../img/icons/services-button.svg");
     background-repeat: no-repeat;
-    background-position: -8px 0;
+    background-position: -8px 3px;
     width: 40px;
     height: 15px;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 16px;
+    margin-top: 1px;
   }
 
   &:hover {

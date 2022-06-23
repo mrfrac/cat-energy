@@ -2,6 +2,7 @@
   height: 11px;
   appearance: none;
   width: 100%;
+  min-width: 86px;
   background-color: transparent;
 
   @include tablet {
@@ -20,6 +21,10 @@
   background: #ffffff;
   border-radius: 6px;
   border: 1px solid $border-gray;
+
+  &:first-of-type {
+    margin-right: 10px;
+  }
 
   @include tablet {
     height: 6px;

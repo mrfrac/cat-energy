@@ -8,6 +8,12 @@
   color: #ffffff;
   border: none;
   text-align: center;
+  padding: 14px 0;
+
+  &--select-program {
+    @include mr-s14-h18;
+    padding-top: 10px;
+  }
 
   &:hover {
     background-color: #5eaa2f;
@@ -15,10 +21,6 @@
 
   &:active {
     color: rgba(#ffffff, 0.3);
-  }
-
-  @include mobile-only {
-    padding: 14px 0;
   }
 
   @include tablet {

@@ -67,7 +67,7 @@
   @include clear-margin;
 
   margin-top: 25px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -104,7 +104,9 @@
 }
 
 .intro__selection-button {
-  margin-top: 3px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 11px 0;
 
   @include tablet {
     width: 244px;

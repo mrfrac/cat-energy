@@ -11,6 +11,16 @@
   overflow: hidden;
 }
 
+.mobile-br {
+  @include mobile-only {
+    display: inline;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
 .tablet-br {
   @include mobile-only {
     display: none;

@@ -38,7 +38,7 @@
 .features__list {
   @include clear-list-styles;
 
-  padding-bottom: 39px;
+  padding-bottom: 29px;
   counter-reset: feature-number;
 
   @include tablet {

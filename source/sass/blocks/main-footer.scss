@@ -76,7 +76,7 @@
 
 .main-footer__logo-link {
   display: block;
-  padding-bottom: 32px;
+  padding-bottom: 27px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
@@ -87,7 +87,7 @@
 }
 
 .main-footer__social {
-  padding-bottom: 21px;
+  padding-bottom: 14px;
   padding-top: 21px;
   border-bottom: 1px solid #d9d9d9;
 
@@ -98,7 +98,7 @@
 }
 
 .main-footer__copyright {
-  padding-top: 22px;
+  padding-top: 12px;
 
   @include tablet {
     padding: 0;

@@ -70,11 +70,11 @@
 
 .example-slider__control {
   width: calc((100% / 3) * 2);
-  margin: 15px auto 0;
+  margin: 9px auto 0;
   display: flex;
   align-items: center;
-  column-gap: 13px;
-  justify-content: space-between;
+  column-gap: 16px;
+  justify-content: center;
 
   @include tablet {
     width: 77%;

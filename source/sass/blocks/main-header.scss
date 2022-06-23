@@ -31,6 +31,8 @@
 
 .main-header__text-link {
   @include logo-link-params;
+  margin-top: 10px;
+  margin-left: -10px;
 
   display: block;
   align-self: center;
