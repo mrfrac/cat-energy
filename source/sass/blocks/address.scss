@@ -7,28 +7,41 @@
 }
 
 .address {
-  padding: 26px 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
+  &__wrapper {
+    padding: 26px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
     "title street"
     "title city";
 
-  &--gray {
-    background-color: $light-gray;
-  }
+    &--gray {
+      background-color: $light-gray;
+    }
 
-  @include tablet {
-    padding: 60px 70px 56px 70px;
+    @include tablet {
+      padding: 60px 70px 56px 70px;
+    }
+
+    @include desktop {
+      width: 425px;
+      background-color: #ffffff;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
   }
 
   @include desktop {
-    width: 425px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 165px;
-    left: 110px;
-    transform: translateY(-50%);
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 107px;
+    height: 400px;
+    box-sizing: border-box;
+
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 

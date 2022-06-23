@@ -7,6 +7,12 @@
   @include tablet {
     height: 400px;
   }
+
+  @include desktop {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
 }
 
 .main-footer__wrapper {
