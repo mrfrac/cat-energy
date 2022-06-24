@@ -12,8 +12,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "title street"
-    "title city";
+      "title street"
+      "title city";
 
     &--gray {
       background-color: $light-gray;
