@@ -32,7 +32,7 @@
   }
 
   @include tablet {
-    padding-top: 62px;
+    padding-top: 75px;
     padding-left: 29px;
     padding-right: 30px;
   }
@@ -78,6 +78,7 @@
     text-align: left;
     margin-left: 89px;
     margin-bottom: 20px;
+    margin-top: 41px;
   }
 
   @include desktop {
@@ -91,7 +92,7 @@
 .intro__intro-image {
   @include tablet {
     width: 709px;
-    height: 609px;
+    height: 604px;
   }
 
   @include desktop {
@@ -111,8 +112,9 @@
   @include tablet {
     width: 244px;
     position: absolute;
-    top: 340px;
-    left: 117px;
+    top: 370px;
+    left: 120px;
+    height: 54px;
   }
 
   @include desktop {

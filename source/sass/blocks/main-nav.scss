@@ -60,7 +60,7 @@
     height: 2px;
     background-color: $basic-green;
     left: 0;
-    top: 32px;
+    top: 33px;
     display: none;
     position: absolute;
   }
@@ -71,7 +71,9 @@
 
   &--active {
     &::before {
-      display: block;
+      @include tablet {
+        display: block;
+      }
     }
   }
 }
@@ -81,7 +83,9 @@
 
   .main-nav__link {
     &::before {
-      background-color: #ffffff;
+      @include desktop {
+        background-color: #ffffff;
+      }
     }
 
     @include desktop {

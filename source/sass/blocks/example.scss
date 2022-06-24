@@ -136,7 +136,7 @@
   }
 
   @include tablet {
-    width: 162px;
+    width: 158px;
   }
 
   @include desktop {
@@ -156,6 +156,7 @@
     @include tablet {
       display: block;
       margin-top: 11px;
+      margin-right: 3px;
     }
 
     @include desktop {
@@ -167,6 +168,8 @@
   &-price {
     @include tablet {
       display: block;
+      margin-top: 9px;
+      margin-right: 1px;
     }
 
     @include desktop {

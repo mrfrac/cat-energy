@@ -50,7 +50,7 @@
       height: 211px;
       background-size: 200px 211px;
       left: -34px;
-      top: 0;
+      top: 3px;
       float: right;
     }
 
@@ -74,8 +74,8 @@
       width: 268px;
       height: 200px;
       background-size: 268px 200px;
-      left: 0;
-      top: 31px;
+      left: -2px;
+      top: 14px;
       float: right;
     }
 
@@ -90,7 +90,7 @@
   }
 
   @include tablet {
-    padding: 77px 28px 53px 53px;
+    padding: 77px 28px 57px 53px;
     margin-bottom: 30px;
   }
 
@@ -111,6 +111,7 @@
 
     margin-left: 0;
     text-align: left;
+    margin-bottom: 0;
   }
 
   @include desktop {
@@ -130,9 +131,10 @@
   @include tablet {
     @include sr-s16-h24;
 
-    margin-right: 315px;
+    margin-right: 285px;
     padding-bottom: unset;
     border-bottom: unset;
+    margin-top: 25px;
   }
 
   @include desktop {
@@ -161,6 +163,11 @@
     display: inline-block;
     margin-left: 16px;
     margin-top: 1px;
+
+    @include tablet {
+      margin-left: 25px;
+      background-position: -8px 0;
+    }
   }
 
   &:hover {
@@ -176,6 +183,6 @@
   @include tablet {
     @include mr-s20-h30;
 
-    margin-top: 48px;
+    margin-top: 51px;
   }
 }

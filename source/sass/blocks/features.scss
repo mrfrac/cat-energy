@@ -9,6 +9,7 @@
   @include tablet {
     padding-right: 30px;
     padding-left: 30px;
+    padding-top: 15px;
   }
 
   @include desktop {
@@ -26,8 +27,8 @@
   @include tablet {
     @include mr-s60-h60;
 
-    margin-top: 15px;
-    margin-bottom: 32px;
+    margin-top: 0;
+    margin-bottom: 42px;
   }
 
   @include desktop {
@@ -44,9 +45,9 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 37px;
-    grid-column-gap: 20%;
-    padding-bottom: 84px;
+    grid-gap: 83px;
+    grid-column-gap: 8.5%;
+    padding-bottom: 82px;
   }
 
   @include desktop {
@@ -110,7 +111,7 @@
     @include sr-s16-h24;
 
     width: 235px;
-    padding-top: 151px;
+    padding-top: 142px;
     padding-left: 0;
 
     &::before {
@@ -120,8 +121,8 @@
       line-height: 280px;
       color: $light-gray;
       position: absolute;
-      top: 0;
-      left: 118px;
+      top: -9px;
+      left: 114px;
       z-index: -10;
       font-family: $main-font-family;
     }
