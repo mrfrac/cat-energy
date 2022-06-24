@@ -163,10 +163,20 @@
 <footer class="main-footer">
   <div class="main-footer__wrapper">
     <section class="address address--gray">
-      <h2 class="address__title">Приглашаем <span class="tablet-br"><br></span> к сотрудничеству дилеров!</h2>
-      <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
-      <span class="address__city">Санкт-Петербург</span>
+      <div class="address__wrapper">
+        <h2 class="address__title">Приглашаем <span class="tablet-br"><br></span><span class="mobile-br"><br></span> к сотрудничеству дилеров!</h2>
+        <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="address__city">Санкт-Петербург</span>
+      </div>
     </section>
+    <picture>
+      <source media="(min-width: 1440x)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+      <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+      <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
+      <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
+      <img class="main-footer__map-sub" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда" width="320" height="362">
+    </picture>
     <iframe class="main-footer__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300328!2d30.32085871630256!3d59.93871916905388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1654169577358!5m2!1sru!2sru"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -182,21 +192,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__item-link" href="https://vk.com" aria-label="Профиль в VK">
-                <svg width="28" height="22">
+                <svg width="28" height="22" viewBox="0 0 27 17">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__item-link" href="https://youtube.com" aria-label="Наш канал YouTube">
-                <svg width="28" height="22">
+                <svg width="28" height="22" viewBox="0 0 24 19">
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__item-link" href="https://web.telegram.org/" aria-label="Наш канал в телеграм">
-                <svg width="28" height="22">
+                <svg width="28" height="22" viewBox="0 0 20 18">
                   <use xlink:href="img/sprite.svg#telegram"></use>
                 </svg>
               </a>
@@ -206,7 +216,7 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <p class="copyright__text">HTML Academy</p>
-            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 35 42">
+            <svg class="copyright__logo" width="40" height="40" viewBox="0 0 60 60">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
