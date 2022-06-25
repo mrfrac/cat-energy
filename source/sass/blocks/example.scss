@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "title title"
+      "title slider"
       "description slider"
       "info slider";
     justify-content: space-between;
@@ -62,10 +62,9 @@
 
   @include desktop {
     grid-area: description;
-    margin-top: 144px;
+    margin-top: 93px;
     margin-right: 0;
     width: 436px;
-    margin-bottom: 69px;
   }
 }
 

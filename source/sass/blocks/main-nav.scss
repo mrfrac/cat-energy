@@ -56,11 +56,11 @@
 
   &::before {
     content: "";
-    width: 100%;
+    width: 95%;
     height: 2px;
     background-color: $basic-green;
-    left: 0;
-    top: 33px;
+    left: 1;
+    top: 35px;
     display: none;
     position: absolute;
   }

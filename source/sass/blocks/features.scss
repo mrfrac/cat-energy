@@ -13,7 +13,7 @@
   }
 
   @include desktop {
-    padding-right: 110px;
+    padding-right: 124px;
     padding-left: 110px;
   }
 }
@@ -32,7 +32,7 @@
   }
 
   @include desktop {
-    margin-top: 41px;
+    margin-top:26px;
   }
 }
 
@@ -54,6 +54,7 @@
     display: flex;
     column-gap: 94px;
     justify-content: space-between;
+    padding-bottom: 105px;
   }
 }
 
