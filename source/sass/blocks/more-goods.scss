@@ -6,16 +6,16 @@
   }
 
   @include desktop {
-    padding: 76px 79px 0 110px;
+    padding: 77px 79px 0 110px;
   }
 }
 
 .more-goods__title {
   @include mr-s24-h24;
-  @include green-line;
+  @include green-line(22px);
 
   margin: 0;
-  width: 248px;
+  width: 263px;
   position: relative;
 
   &-text {
@@ -23,8 +23,8 @@
     position: relative;
     z-index: 2;
     background-color: #ffffff;
-    padding: 0 22px;
-    margin-left: -22px;
+    padding: 0 36px;
+    margin-left: -36px;
 
     @include desktop {
       padding: 0 36px;
@@ -56,7 +56,7 @@
   }
 
   @include desktop {
-    margin-top: 81px;
+    margin-top: 79px;
     border-bottom: unset;
     border-left: unset;
     border-right: unset;

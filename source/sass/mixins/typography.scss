@@ -56,9 +56,18 @@
   @include typography-template(20px, 20px);
 }
 
+@mixin mr-s20-h21 {
+  @include typography-template(20px, 21px);
+}
+
 @mixin mr-s20-h22 {
   @include typography-template(20px, 22px);
 }
+
+@mixin mr-s20-h24 {
+  @include typography-template(20px, 24px);
+}
+
 
 @mixin mr-s20-h26 {
   @include typography-template(20px, 26px);

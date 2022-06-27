@@ -13,12 +13,13 @@
     flex-direction: column;
     padding: 0 37px 39px;
     justify-content: flex-end;
-    background: linear-gradient(#ffffff, #ffffff 79px, #f2f2f2 79px, #f2f2f2 100%);
+    background: linear-gradient(#ffffff, #ffffff 72px, #f2f2f2 72px, #f2f2f2 100%);
   }
 }
 
 .product-card__image {
-  margin-left: 7px;
+  display: block;
+  margin: 0 auto;
 
   @include tablet {
     width: 168px;
@@ -28,9 +29,17 @@
 
 .product-card__image-link {
   grid-area: image;
-  display: block;
-  align-self: center;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-left: 3px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+    justify-content: flex-end;
+  }
 }
 
 .product-card__title-link {
@@ -43,11 +52,15 @@
 
   @include tablet {
     margin-top: 34px;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
     width: 125px;
     display: block;
     text-align: center;
     align-self: center;
+  }
+
+  @include desktop {
+    margin-bottom: 18px;
   }
 }
 
@@ -57,6 +70,17 @@
   margin-left: 7px;
 
   text-transform: uppercase;
+
+  @include tablet {
+    @include mr-s20-h24;
+
+    width: 130px;
+    margin-left: 0;
+  }
+
+  @include desktop {
+    @include mr-s20-h21;
+  }
 }
 
 .product-card__features {
@@ -67,7 +91,8 @@
   padding: 13px 0 0 7px;
 
   @include tablet {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
+    padding: 0 0 0 1px;
   }
 }
 
@@ -90,7 +115,7 @@
   @include tablet {
     @include sr-s16-h16;
 
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     padding-top: 7px;
     border-bottom: 1px solid $border-gray;
   }
@@ -104,8 +129,8 @@
   @include tablet {
     background: unset;
     border: 2px solid #f2f2f2;
-    margin-top: 79px;
-    padding: 52px 37px 38px 38px;
+    margin-top: 72px;
+    padding: 52px 37px 36px 38px;
   }
 }
 
@@ -125,7 +150,7 @@
   @include tablet {
     @include mr-s20-h22;
 
-    margin-top: 49px;
+    margin-top: 44px;
     width: 134px;
     margin-left: auto;
     margin-right: auto;
@@ -142,7 +167,7 @@
     @include sr-s16-h18;
 
     width: 167px;
-    margin: 23px auto 87px auto;
+    margin: 23px auto 84px auto;
   }
 }
 

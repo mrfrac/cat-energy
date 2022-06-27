@@ -45,12 +45,14 @@
   @include tablet {
     @include sr-s16-h20;
 
+    margin-top: 3px;
     text-align: right;
   }
 
   @include desktop {
     width: 244px;
     text-align: left;
+    margin-top: 8px;
   }
 }
 
@@ -62,11 +64,14 @@
 
   @include tablet {
     @include sr-s16-h20;
+
+    margin-top: 3px;
   }
 
   @include desktop {
     width: 82px;
     text-align: left;
+    margin-top: 8px;
   }
 }
 
@@ -79,7 +84,7 @@
   padding-bottom: 9px;
 
   @include tablet {
-    margin-top: 25px;
+    margin-top: 11px;
   }
 
   @include desktop {
