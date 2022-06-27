@@ -13,14 +13,14 @@
   list-style: none;
 }
 
-@mixin green-line {
+@mixin green-line($top: 15px) {
   &::before {
     content: "";
     width: calc(100vw - 20px);
     height: 2px;
     background-color: $basic-green;
     position: absolute;
-    top: 16px;
+    top: 15px;
     left: 0;
     z-index: 1;
 

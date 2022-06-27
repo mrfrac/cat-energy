@@ -25,6 +25,7 @@
 
   text-transform: uppercase;
   margin-bottom: 13px;
+  margin-left: 1px;
 
   @include tablet {
     @include mr-s20-h20;
@@ -70,9 +71,12 @@
 }
 
 .goods__button {
-  grid-area: button;
+  @include mr-s16-h20;
 
+  grid-area: button;
   margin-top: 15px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
   @include tablet {
     margin-top: 25px;
