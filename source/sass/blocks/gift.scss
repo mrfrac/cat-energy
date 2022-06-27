@@ -1,36 +1,6 @@
 .gift {
   padding: 35px 20px;
 
-  &__description {
-    @include sr-s16-h20;
-    @include clear-margin;
-
-    color: #ffffff;
-    position: absolute;
-    bottom: 43px;
-    width: 100%;
-    text-align: center;
-
-    @include tablet {
-      @include sr-s16-h20;
-
-      right: 124px;
-      top: 71px;
-      display: block;
-      width: 161px;
-      height: 60px;
-      text-align: left;
-    }
-
-    @include desktop {
-      text-align: center;
-      top: unset;
-      bottom: 42px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
   @include tablet {
     padding: 69px 30px 76px 31px;
   }
@@ -40,6 +10,36 @@
     padding-right: 0;
     padding-top: 0;
     margin-top: 191px;
+  }
+}
+
+.gift__description {
+  @include sr-s16-h20;
+  @include clear-margin;
+
+  color: #ffffff;
+  position: absolute;
+  bottom: 43px;
+  width: 100%;
+  text-align: center;
+
+  @include tablet {
+    @include sr-s16-h20;
+
+    right: 124px;
+    top: 71px;
+    display: block;
+    width: 161px;
+    height: 60px;
+    text-align: left;
+  }
+
+  @include desktop {
+    text-align: center;
+    top: unset;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

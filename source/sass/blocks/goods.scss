@@ -6,71 +6,6 @@
     "description price"
     "button button";
 
-  &__title {
-    @include clear-margin;
-    @include mr-s16-h16;
-
-    text-transform: uppercase;
-    margin-bottom: 13px;
-
-    @include tablet {
-      @include mr-s20-h20;
-    }
-
-    @include desktop {
-      width: 324px;
-      margin-bottom: 0;
-    }
-  }
-
-  &__description {
-    @include sr-s14-h14;
-
-    grid-area: description;
-
-    @include tablet {
-      @include sr-s16-h20;
-
-      text-align: right;
-    }
-
-    @include desktop {
-      width: 244px;
-      text-align: left;
-    }
-  }
-
-  &__price {
-    @include sr-s14-h14;
-
-    grid-area: price;
-    text-align: right;
-
-    @include tablet {
-      @include sr-s16-h20;
-    }
-
-    @include desktop {
-      width: 82px;
-      text-align: left;
-    }
-  }
-
-  &__button {
-    grid-area: button;
-
-    margin-top: 15px;
-
-    @include tablet {
-      margin-top: 25px;
-    }
-
-    @include desktop {
-      margin-top: 0;
-      width: 244px;
-    }
-  }
-
   @include tablet {
     grid-template-columns: 1fr 1fr 93px;
     grid-template-areas:
@@ -81,6 +16,71 @@
   @include desktop {
     display: flex;
     align-items: center;
+  }
+}
+
+.goods__title {
+  @include clear-margin;
+  @include mr-s16-h16;
+
+  text-transform: uppercase;
+  margin-bottom: 13px;
+
+  @include tablet {
+    @include mr-s20-h20;
+  }
+
+  @include desktop {
+    width: 324px;
+    margin-bottom: 0;
+  }
+}
+
+.goods__description {
+  @include sr-s14-h14;
+
+  grid-area: description;
+
+  @include tablet {
+    @include sr-s16-h20;
+
+    text-align: right;
+  }
+
+  @include desktop {
+    width: 244px;
+    text-align: left;
+  }
+}
+
+.goods__price {
+  @include sr-s14-h14;
+
+  grid-area: price;
+  text-align: right;
+
+  @include tablet {
+    @include sr-s16-h20;
+  }
+
+  @include desktop {
+    width: 82px;
+    text-align: left;
+  }
+}
+
+.goods__button {
+  grid-area: button;
+
+  margin-top: 15px;
+
+  @include tablet {
+    margin-top: 25px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    width: 244px;
   }
 }
 

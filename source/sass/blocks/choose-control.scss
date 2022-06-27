@@ -1,15 +1,15 @@
 .choose-control {
   display: flex;
   align-items: center;
+}
 
-  &__label {
-    @include mr-s16-h18;
+.choose-control__label {
+  @include mr-s16-h18;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    @include tablet {
-      @include mr-s20-h30;
-    }
+  @include tablet {
+    @include mr-s20-h30;
   }
 }
 

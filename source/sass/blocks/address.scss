@@ -9,31 +9,9 @@
 .address {
   &--gray {
     background-color: $light-gray;
-    
-    @include desktop {
-      background-color: #ffffff;
-    }
-  }
-
-  &__wrapper {
-    padding: 26px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title street"
-      "title city";
-
-    @include tablet {
-      padding: 60px 70px 56px 70px;
-    }
 
     @include desktop {
-      width: 425px;
       background-color: #ffffff;
-      position: relative;
-      top: 0;
-      left: 0;
-      z-index: 2;
     }
   }
 
@@ -46,6 +24,28 @@
 
     max-width: 1220px;
     margin: 0 auto;
+  }
+}
+
+.address__wrapper {
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title street"
+    "title city";
+
+  @include tablet {
+    padding: 60px 70px 56px 70px;
+  }
+
+  @include desktop {
+    width: 425px;
+    background-color: #ffffff;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 }
 
