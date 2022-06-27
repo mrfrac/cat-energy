@@ -11,13 +11,17 @@
   overflow: hidden;
 }
 
-.mobile-br {
+.desktop-br {
   @include mobile-only {
-    display: inline;
+    display: none;
   }
 
   @include tablet {
     display: none;
+  }
+
+  @include desktop {
+    display: inline;
   }
 }
 
@@ -28,6 +32,20 @@
 
   @include tablet {
     display: inline;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-br {
+  @include mobile-only {
+    display: inline;
+  }
+
+  @include tablet {
+    display: none;
   }
 
   @include desktop {

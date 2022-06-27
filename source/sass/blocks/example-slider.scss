@@ -11,7 +11,8 @@
   @include desktop {
     grid-area: slider;
     position: relative;
-    right: 0;
+    right: -11px;
+    bottom: 90px;
     background-color: unset;
   }
 }
@@ -53,6 +54,10 @@
       max-width: none;
       transform: translateX(-26px);
     }
+
+    @include desktop {
+      transform: translate(-10px, 75px);
+    }
   }
 
   &--slim {
@@ -65,6 +70,10 @@
       height: 100%;
       max-width: none;
       transform: translateX(-256px);
+    }
+
+    @include desktop {
+      transform: translate(-256px, 80px);
     }
   }
 }

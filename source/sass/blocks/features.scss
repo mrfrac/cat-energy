@@ -13,7 +13,7 @@
   }
 
   @include desktop {
-    padding-right: 124px;
+    padding-right: 106px;
     padding-left: 110px;
   }
 }
@@ -52,7 +52,7 @@
 
   @include desktop {
     display: flex;
-    column-gap: 94px;
+    column-gap: 76px;
     justify-content: space-between;
     padding-bottom: 105px;
   }
@@ -105,6 +105,10 @@
   &--alarm {
     &::after {
       background-image: url("../img/icons/alarm.svg");
+    }
+
+    @include desktop {
+      width: 250px;
     }
   }
 

@@ -46,6 +46,9 @@
     top: 0;
     left: 0;
     z-index: 2;
+    padding-left: 79px;
+    padding-right: 61px;
+    grid-column-gap: 72px;
   }
 }
 
@@ -62,6 +65,10 @@
 
     width: 172px;
   }
+
+  @include desktop {
+    width: 163px;
+  }
 }
 
 .address__street {
@@ -76,6 +83,12 @@
     align-self: baseline;
     text-align: right;
   }
+
+  @include desktop {
+    justify-self: left;
+    text-align: left;
+    width: 155px;
+  }
 }
 
 .address__city {
@@ -89,5 +102,10 @@
     justify-self: right;
     align-self: end;
     text-align: right;
+  }
+
+  @include desktop {
+    justify-self: left;
+    text-align: left;
   }
 }

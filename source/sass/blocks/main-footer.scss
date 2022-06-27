@@ -68,7 +68,7 @@
   }
 
   @include desktop {
-    padding: 57px 110px 58px;
+    padding: 53px 110px 58px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -95,6 +95,10 @@
     padding: 0;
     border-bottom: unset;
     margin-left: 27px;
+  }
+
+  @include desktop {
+    margin-left: 30px;
   }
 }
 
