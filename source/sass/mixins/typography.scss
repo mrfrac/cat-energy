@@ -119,6 +119,10 @@
   @include typography-template(14px, 14px, $secondary-font-family);
 }
 
+@mixin sr-s14-h16 {
+  @include typography-template(14px, 16px, $secondary-font-family);
+}
+
 @mixin sr-s14-h18 {
   @include typography-template(14px, 18px, $secondary-font-family);
 }

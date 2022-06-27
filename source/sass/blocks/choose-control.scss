@@ -33,9 +33,14 @@
 
   &--checkbox:checked::before,
   &--checkbox:not(:checked)::before {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     border-radius: 0;
+
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &:checked:hover::before,
@@ -65,14 +70,21 @@
   &--checkbox:not(:checked)::after {
     content: "";
     display: inline-block;
-    width: 24px;
-    height: 19px;
+    width: 18px;
+    height: 14px;
     background-color: $basic-green;
     mask-image: url("../img/icons/check.svg");
-    mask-size: 24px 19px;
+    mask-size: 18px 14px;
     position: relative;
-    top: -11px;
-    left: -32px;
+    top: -7px;
+    left: -24px;
+
+    @include tablet {
+      width: 24px;
+      height: 19px;
+      top: -11px;
+      left: -32px;
+    }
   }
 
   &:not(:checked)::after {
