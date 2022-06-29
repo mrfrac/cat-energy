@@ -120,6 +120,8 @@
 .main-nav--nojs .main-nav__list {
   @include mobile-only {
     display: block;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -162,10 +164,7 @@
     &::after {
       transform: rotate(-45deg);
     }
-
-    /*&:hover::before,
-    &:hover::after {
-      background-color: rgba(#ffffff, 0.6);
-    }*/
   }
 }
+
+
