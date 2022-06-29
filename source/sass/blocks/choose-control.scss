@@ -29,6 +29,13 @@
     width: 30px;
     height: 30px;
     border: 1px solid $border-gray;
+    margin-right: 16px;
+
+    @include tablet {
+      width: 38px;
+      height: 38px;
+      margin-right: 20px;
+    }
   }
 
   &--checkbox:checked::before,
@@ -38,8 +45,8 @@
     border-radius: 0;
 
     @include tablet {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
     }
   }
 
@@ -61,9 +68,16 @@
     height: 13px;
     background-color: $basic-green;
     border-radius: 100%;
-    position: relative;
+    position: absolute;
     top: -9px;
     left: -22px;
+
+    @include tablet {
+      width: 18px;
+      height: 18px;
+      top: -12px;
+      left: -30px;
+    }
   }
 
   &--checkbox:checked::after,
@@ -75,7 +89,7 @@
     background-color: $basic-green;
     mask-image: url("../img/icons/check.svg");
     mask-size: 18px 14px;
-    position: relative;
+    position: absolute;
     top: -7px;
     left: -24px;
 
