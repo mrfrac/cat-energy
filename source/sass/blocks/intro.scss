@@ -112,11 +112,14 @@
   padding: 12px 0;
 
   @include tablet {
+    @include mr-s20-h20;
+
     width: 244px;
     position: absolute;
     top: 370px;
     left: 120px;
     height: 54px;
+    padding-top: 17px;
   }
 
   @include desktop {
