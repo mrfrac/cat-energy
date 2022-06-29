@@ -1,0 +1,103 @@
+.goods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "description price"
+    "button button";
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 93px;
+    grid-template-areas:
+      "title description price"
+      "button button button";
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.goods__title {
+  @include clear-margin;
+  @include mr-s16-h16;
+
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  margin-left: 1px;
+
+  @include tablet {
+    @include mr-s20-h20;
+  }
+
+  @include desktop {
+    width: 324px;
+    margin-bottom: 0;
+  }
+}
+
+.goods__description {
+  @include sr-s14-h14;
+
+  grid-area: description;
+
+  @include tablet {
+    @include sr-s16-h20;
+
+    margin-top: 3px;
+    text-align: right;
+  }
+
+  @include desktop {
+    width: 244px;
+    text-align: left;
+    margin-top: 8px;
+  }
+}
+
+.goods__price {
+  @include sr-s14-h14;
+
+  grid-area: price;
+  text-align: right;
+
+  @include tablet {
+    @include sr-s16-h20;
+
+    margin-top: 3px;
+  }
+
+  @include desktop {
+    width: 82px;
+    text-align: left;
+    margin-top: 8px;
+  }
+}
+
+.goods__button {
+  @include mr-s16-h20;
+
+  grid-area: button;
+  margin-top: 15px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+
+  @include tablet {
+    margin-top: 11px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    width: 244px;
+  }
+}
+
+.goods__button--small {
+  @include desktop {
+    @include mr-s16-h20;
+
+    padding-top: 7px;
+    padding-bottom: 12px;
+  }
+}

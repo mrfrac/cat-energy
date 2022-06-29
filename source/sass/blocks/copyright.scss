@@ -1,0 +1,16 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $dark-gray;
+  text-decoration: none;
+}
+
+.copyright__text {
+  @include sr-s16-h18;
+
+  @include tablet {
+    margin-right: 11px;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,42 @@
+.catalog {
+  @include default-block;
+
+  border-top: 1px solid #d9d9d9;
+
+  @include tablet {
+    border-top: unset;
+  }
+}
+
+.catalog__list {
+  @include clear-list-styles;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    grid-row-gap: 69px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+
+    padding-left: 110px;
+    padding-right: 110px;
+    grid-column-gap: 80px;
+    grid-row-gap: 72px;
+  }
+}
+
+.catalog__item {
+  display: block;
+  padding: 8px 20px 11px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @include tablet {
+    padding: 0;
+    border-bottom: unset;
+  }
+}

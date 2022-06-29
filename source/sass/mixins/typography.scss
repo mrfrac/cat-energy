@@ -1,0 +1,148 @@
+@mixin typography-template($font-size, $line-height, $font-family: $main-font-family, $font-weight: 400) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: normal;
+  line-height: $line-height;
+  font-family: $font-family;
+}
+
+// Main fonts
+
+@mixin mr-s12-h12 {
+  @include typography-template(12px, 12px);
+}
+
+@mixin mr-s12-h16 {
+  @include typography-template(12px, 16px);
+}
+
+@mixin mr-s14-h14 {
+  @include typography-template(14px, 14px);
+}
+
+@mixin mr-s14-h18 {
+  @include typography-template(14px, 18px);
+}
+
+@mixin mr-s14-h20 {
+  @include typography-template(14px, 20px);
+}
+
+@mixin mr-s16-h16 {
+  @include typography-template(16px, 16px);
+}
+
+@mixin mr-s16-h18 {
+  @include typography-template(16px, 19px);
+}
+
+@mixin mr-s16-h20 {
+  @include typography-template(16px, 20px);
+}
+
+@mixin mr-s16-h24 {
+  @include typography-template(16px, 24px);
+}
+
+@mixin mr-s18-h24 {
+  @include typography-template(18px, 24px);
+}
+
+@mixin mr-s20-h0 {
+  @include typography-template(20px, 0);
+}
+
+@mixin mr-s20-h20 {
+  @include typography-template(20px, 20px);
+}
+
+@mixin mr-s20-h21 {
+  @include typography-template(20px, 21px);
+}
+
+@mixin mr-s20-h22 {
+  @include typography-template(20px, 22px);
+}
+
+@mixin mr-s20-h24 {
+  @include typography-template(20px, 24px);
+}
+
+
+@mixin mr-s20-h26 {
+  @include typography-template(20px, 26px);
+}
+
+@mixin mr-s20-h30 {
+  @include typography-template(20px, 30px);
+}
+
+@mixin mr-s24-h24 {
+  @include typography-template(24px, 24px);
+}
+
+@mixin mr-s24-h26 {
+  @include typography-template(24px, 26px);
+}
+
+@mixin mr-s24-h37 {
+  @include typography-template(24px, 37px);
+}
+
+@mixin mr-s30-h37 {
+  @include typography-template(30px, 37px);
+}
+
+@mixin mr-s36-h36 {
+  @include typography-template(36px, 36px);
+}
+
+@mixin mr-s36-h40 {
+  @include typography-template(36px, 40px);
+}
+
+@mixin mr-s60-h60 {
+  @include typography-template(60px, 60px);
+}
+
+// Secondary fonts
+
+@mixin sr-s12-h12 {
+  @include typography-template(12px, 12px, $secondary-font-family);
+}
+
+@mixin sr-s12-h16 {
+  @include typography-template(12px, 16px, $secondary-font-family);
+}
+
+@mixin sr-s14-h14 {
+  @include typography-template(14px, 14px, $secondary-font-family);
+}
+
+@mixin sr-s14-h16 {
+  @include typography-template(14px, 16px, $secondary-font-family);
+}
+
+@mixin sr-s14-h18 {
+  @include typography-template(14px, 18px, $secondary-font-family);
+}
+
+@mixin sr-s14-h20 {
+  @include typography-template(14px, 20px, $secondary-font-family);
+}
+
+@mixin sr-s16-h16 {
+  @include typography-template(16px, 16px, $secondary-font-family);
+}
+
+@mixin sr-s16-h18 {
+  @include typography-template(16px, 19px, $secondary-font-family);
+}
+
+@mixin sr-s16-h20 {
+  @include typography-template(16px, 20px, $secondary-font-family);
+}
+
+@mixin sr-s16-h24 {
+  @include typography-template(16px, 24px, $secondary-font-family);
+}

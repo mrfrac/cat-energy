@@ -1,28 +1,196 @@
+.programs {
+  @include default-block;
+}
+
+.programs__wrapper {
+  padding: 20px 20px 0;
+
+  @include tablet {
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @include desktop {
+    padding: 39px 110px 0;
+  }
+}
+
+.programs__list {
+  @include clear-list-styles;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+}
+
 .programs__item {
-  &::after {
+  background-color: $light-gray;
+  padding: 30px 20px 23px;
+  margin-bottom: 20px;
+
+  &::before {
     content: "";
     display: block;
+    float: left;
+    position: relative;
   }
 
-  &--slim::after {
+  &--slim::before {
     width: 50px;
     height: 53px;
+    left: 2px;
+    top: -9px;
     background: url("../img/icons/slim-catalog.svg") center no-repeat;
+
+    @include tablet {
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+      left: -34px;
+      top: 3px;
+      float: right;
+    }
+
+    @include desktop {
+      width: 100px;
+      height: 106px;
+      background-size: 100px 106px;
+      left: 0;
+      float: left;
+    }
   }
 
-  &--pro::after {
+  &--pro::before {
     width: 67px;
     height: 50px;
+    left: -7px;
+    top: -6px;
     background: url("../img/icons/pro-catalog.svg") center no-repeat;
+
+    @include tablet {
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+      left: -2px;
+      top: 14px;
+      float: right;
+    }
+
+    @include desktop {
+      width: 134px;
+      height: 100px;
+      background-size: 134px 100px;
+      left: -21px;
+      top: 5px;
+      float: left;
+    }
+  }
+
+  @include tablet {
+    padding: 77px 28px 57px 53px;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    padding: 41px 50px 59px 52px;
+    width: 45%;
+  }
+}
+
+.programs__title {
+  @include mr-s24-h37;
+
+  text-transform: uppercase;
+  margin: 0 0 29px 71px;
+
+  @include tablet {
+    @include mr-s36-h36;
+
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    @include clear-margin;
+    margin-left: 162px;
+    margin-top: 36px;
+  }
+}
+
+.programs__description {
+  @include sr-s14-h18;
+
+  margin: 29px 0 0 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @include tablet {
+    @include sr-s16-h24;
+
+    margin-right: 285px;
+    padding-bottom: unset;
+    border-bottom: unset;
+    margin-top: 25px;
+  }
+
+  @include desktop {
+    @include clear-margin;
+
+    margin-top: 73px;
   }
 }
 
 .programs__button {
+  @include mr-s16-h16;
+
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+
   &::after {
     content: "";
-    background: url("../img/icons/services-button.svg") center no-repeat;
+    background-image: url("../img/icons/services-button.svg");
+    background-repeat: no-repeat;
+    background-position: -8px 3px;
     width: 40px;
     height: 15px;
     display: inline-block;
+    margin-left: 16px;
+    margin-top: 1px;
+
+    @include tablet {
+      margin-left: 25px;
+      background-position: -8px 0;
+    }
+
+    @include desktop {
+      margin-left: 28px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-position: 0 0;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    @include mr-s20-h30;
+
+    margin-top: 51px;
+  }
+
+  @include desktop {
+    margin-top: 27px;
   }
 }

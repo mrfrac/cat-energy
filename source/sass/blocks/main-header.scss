@@ -1,17 +1,63 @@
+@mixin logo-link-params {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header {
+  height: 65px;
+
+  @include default-block;
+}
+
+.main-header__wrapper {
+  display: flex;
+  padding: 10px 20px 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    padding: 24px 34px 24px 30px;
+  }
+
+  @include desktop {
+    padding: 51px 112px 32px 110px;
+  }
+}
+
+.main-header__text-link {
+  @include logo-link-params;
+  margin-top: 10px;
+  margin-left: -10px;
+
+  display: block;
+  align-self: center;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-header__logo-link {
+  @include logo-link-params;
+
+  display: block;
+}
+
 .main-header__logo-image {
-  @media (min-width: $tablet-width) {
+  display: block;
+
+  @include tablet {
     width: 174px;
     height: 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: 202px;
     height: 59px;
-  }
-}
-
-.main-header__logo-text {
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

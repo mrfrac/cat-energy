@@ -1,0 +1,123 @@
+.choose-control {
+  display: flex;
+  align-items: center;
+}
+
+.choose-control__label {
+  @include mr-s16-h18;
+
+  text-transform: uppercase;
+
+  @include tablet {
+    @include mr-s20-h30;
+  }
+}
+
+.choose-control__input {
+  appearance: none;
+  background-color: unset;
+  margin: 0;
+
+  &:checked::before,
+  &:not(:checked)::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border-gray;
+    margin-right: 16px;
+
+    @include tablet {
+      width: 38px;
+      height: 38px;
+      margin-right: 20px;
+    }
+  }
+
+  &--checkbox:checked::before,
+  &--checkbox:not(:checked)::before {
+    width: 28px;
+    height: 28px;
+    border-radius: 0;
+
+    @include tablet {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &:checked:hover::before,
+  &:not(:checked):hover::before {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled::before {
+    border: 1px solid #bababa;
+    opacity: 0.3;
+  }
+
+  &:checked::after,
+  &:not(:checked)::after {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 100%;
+    position: absolute;
+    top: -9px;
+    left: -22px;
+
+    @include tablet {
+      width: 18px;
+      height: 18px;
+      top: -12px;
+      left: -30px;
+    }
+
+    @include desktop {
+      top: 36px;
+      left: 41px;
+    }
+  }
+
+  &--checkbox:checked::after,
+  &--checkbox:not(:checked)::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background-color: $basic-green;
+    mask-image: url("../img/icons/check.svg");
+    mask-size: 18px 14px;
+    position: absolute;
+    top: -7px;
+    left: -24px;
+
+    @include tablet {
+      width: 24px;
+      height: 19px;
+      top: -11px;
+      left: -32px;
+    }
+  }
+
+  &:not(:checked)::after {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &:checked::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &:checked:disabled::after {
+    background-color: $basic-green;
+    opacity: 0.3;
+  }
+}

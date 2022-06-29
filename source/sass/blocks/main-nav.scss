@@ -1,0 +1,101 @@
+.main-nav {
+  margin-top: 8px;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 0;
+  border: 0;
+
+  &::before {
+    content: url("../img/icons/burger-open.svg");
+    width: 24px;
+    height: 16px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include clear-list-styles;
+
+  @include mobile-only {
+    display: none;
+    position: absolute;
+    margin: 65px 0 0;
+    left: 0;
+  }
+
+  @include tablet {
+    display: flex;
+    column-gap: 34px;
+  }
+}
+
+.main-nav__link {
+  @include mr-s18-h24;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    width: 98%;
+    height: 2px;
+    background-color: $basic-green;
+    left: 0;
+    top: 33px;
+    display: none;
+    position: absolute;
+
+    @include desktop {
+      width: 95%;
+      left: 1px;
+      top: 35px;
+    }
+  }
+
+  @include desktop {
+    @include mr-s20-h30;
+  }
+
+  &--active {
+    &::before {
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+}
+
+.main-nav--index {
+  z-index: 2;
+
+  .main-nav__link {
+    &::before {
+      @include desktop {
+        background-color: #ffffff;
+      }
+    }
+
+    @include desktop {
+      color: #ffffff;
+    }
+  }
+}

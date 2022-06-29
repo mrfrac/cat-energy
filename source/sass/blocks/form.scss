@@ -1,0 +1,383 @@
+@mixin default-form-block($left: 20px, $right: 20px) {
+  padding-left: $left;
+  padding-right: $right;
+  position: relative;
+}
+
+@mixin default-block-title($width: 100%) {
+  @include mr-s24-h26;
+  @include clear-padding;
+
+  width: $width;
+  display: block;
+
+  @include tablet {
+    @include mr-s36-h36;
+  }
+}
+
+.form {
+  @include default-block;
+
+  border-top: 1px solid #d9d9d9;
+
+  @include tablet {
+    border-top: none;
+  }
+}
+
+.form__main-blocks {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 111px;
+    padding-right: 112px;
+    padding-bottom: 50px;
+  }
+}
+
+.form__header {
+  padding: 27px 20px 39px;
+
+  @include tablet {
+    padding: 76px 0 66px;
+  }
+
+  @include desktop {
+    padding: 0 0 66px 110px;
+  }
+}
+
+.form__header-title {
+  @include clear-margin;
+  @include mr-s36-h36;
+
+  @include tablet {
+    @include mr-s60-h60;
+
+    margin-left: 69px;
+  }
+
+  @include desktop {
+    margin-top: 124px;
+    margin-left: 0;
+  }
+}
+
+.form__header-description {
+  @include mr-s14-h18;
+  @include clear-margin;
+
+  margin-top: 37px;
+  text-transform: uppercase;
+
+  @include tablet {
+    @include mr-s20-h30;
+
+    margin-left: 70px;
+    margin-top: 54px;
+  }
+
+  @include desktop {
+    margin-top: 56px;
+    margin-left: 0;
+  }
+}
+
+.form__block {
+  @include clear-padding;
+  @include clear-margin;
+
+  border: none;
+}
+
+.form__block-title--lined {
+  @include green-line;
+
+  position: relative;
+}
+
+.form__block-title-text {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  padding: 0 20px;
+  margin-left: -20px;
+
+  @include tablet {
+    padding: 0 40px;
+    margin-left: -40px;
+  }
+}
+
+.form__info {
+  @include default-form-block;
+
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 6px;
+
+  @include tablet {
+    @include default-form-block(71px, 67px);
+
+    padding-bottom: 49px;
+    border-bottom: none;
+  }
+
+  @include desktop {
+    width: 569px;
+    padding: 0;
+  }
+}
+
+.form__info-item {
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
+
+  @include desktop {
+    margin-bottom: 21px;
+  }
+}
+
+.form__info-item .text-control__label {
+  margin-right: 16px;
+}
+
+.form__purpose {
+  @include default-form-block;
+
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 22px;
+  padding-bottom: 8px;
+
+  @include tablet {
+    @include default-form-block(71px, 69px);
+    padding-top: 0;
+    padding-bottom: 75px;
+    border-bottom: none;
+
+    .form__block-wrapper {
+      padding: 24px 0 11px 28px;
+      border: 1px solid #e7e7e7;
+    }
+  }
+
+  @include desktop {
+    width: 568px;
+    padding: 0;
+  }
+}
+
+.form__purpose-item {
+  margin-bottom: 7px;
+
+  @include tablet {
+    margin-bottom: 10px;
+  }
+}
+
+.form__contacts {
+  @include default-form-block;
+
+  padding-top: 26px;
+  padding-bottom: 10px;
+
+  &-list {
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5.42%;
+    }
+  }
+
+  .form__block-title {
+    @include default-block-title(207px);
+
+    margin-bottom: 35px;
+
+    @include tablet {
+      width: 562px;
+      margin-right: 0;
+      margin-bottom: 76px;
+    }
+  }
+
+  @include tablet {
+    @include default-form-block(69px, 65px);
+
+    padding-top: 0;
+    padding-bottom: 43px;
+  }
+
+  @include desktop {
+    @include default-form-block(110px, 110px);
+    padding-bottom: 46px;
+  }
+}
+
+.form__contacts-item {
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
+}
+
+.form__contacts-item .text-control__label {
+  margin-right: 10px;
+
+  @include tablet {
+    margin-right: 16px;
+  }
+
+  @include desktop {
+    margin-right: 21px;
+  }
+}
+
+.form__comment {
+  @include default-form-block;
+
+  padding-bottom: 23px;
+
+  .form__block-title {
+    @include default-block-title(141px);
+
+    margin-bottom: 38px;
+
+    @include tablet {
+      width: 225px;
+      margin-bottom: 76px;
+    }
+  }
+
+  @include tablet {
+    @include default-form-block(69px, 65px);
+    padding-bottom: 65px;
+  }
+
+  @include desktop {
+    @include default-form-block(110px, 110px);
+
+    padding-bottom: 67px;
+  }
+}
+
+.form__more {
+  @include default-form-block;
+
+  padding-top: 0;
+  padding-bottom: 20px;
+
+  .form__block-title {
+    @include default-block-title(161px);
+
+    margin-bottom: 33px;
+
+    @include tablet {
+      width: 251px;
+      margin-bottom: 57px;
+    }
+
+    @include desktop {
+      margin-bottom: 57px;
+    }
+  }
+
+  &-list {
+    @include clear-list-styles;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 19px;
+      grid-column-gap: 54px;
+    }
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-item {
+    display: block;
+
+    margin-bottom: 10px;
+
+    @include desktop {
+      width: 221px;
+      margin-right: 50px;
+    }
+  }
+
+  @include tablet {
+    @include default-form-block(70px, 67px);
+
+    padding-bottom: 41px;
+  }
+
+  @include desktop {
+    @include default-form-block(110px, 207px);
+
+    padding-bottom: 47px;
+  }
+}
+
+.form__submit-area {
+  @include default-form-block;
+
+  padding-bottom: 32px;
+  text-align: center;
+
+  @include tablet {
+    @include default-form-block(71px, 71px);
+    text-align: left;
+    padding-bottom: 72px;
+  }
+
+  @include desktop {
+    @include default-form-block(111px, 111px);
+    padding-bottom: 82px;
+  }
+}
+
+.form__submit-note {
+  @include sr-s14-h16;
+  display: block;
+  margin-top: 21px;
+
+  @include tablet {
+    @include sr-s16-h16;
+
+    display: inline-block;
+    margin-left: 9.34%;
+  }
+
+  @include desktop {
+    margin-left: 6.44%;
+  }
+}
+
+.form__submit-button {
+  @include mr-s16-h20;
+
+  width: 100%;
+  padding-bottom: 9px;
+  padding-top: 11px;
+
+  @include tablet {
+    @include mr-s20-h0;
+
+    display: inline-block;
+    width: 45%;
+    height: 52px;
+  }
+
+  @include desktop {
+    width: 46.6%;
+  }
+}

@@ -1,16 +1,87 @@
+.features {
+  @include default-block;
+}
+
+.features__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+
+  @include desktop {
+    padding-right: 106px;
+    padding-left: 110px;
+  }
+}
+
+.features__title {
+  @include mr-s36-h40;
+  @include clear-margin;
+
+  margin-bottom: 40px;
+
+  @include tablet {
+    @include mr-s60-h60;
+
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  @include desktop {
+    margin-top: 26px;
+  }
+}
+
+.features__list {
+  @include clear-list-styles;
+
+  padding-bottom: 29px;
+  counter-reset: feature-number;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 83px;
+    grid-column-gap: 8.5%;
+    padding-bottom: 82px;
+  }
+
+  @include desktop {
+    display: flex;
+    column-gap: 76px;
+    justify-content: space-between;
+    padding-bottom: 105px;
+  }
+}
+
 .features__item {
+  @include sr-s14-h18;
+
   position: relative;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  min-height: 60px;
 
   &::after {
     content: "";
+    background-color: $basic-green;
+    position: absolute;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-    position: absolute;
     top: 0;
     left: 0;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+    }
   }
 
   &--leaf {
@@ -34,6 +105,31 @@
   &--alarm {
     &::after {
       background-image: url("../img/icons/alarm.svg");
+    }
+
+    @include desktop {
+      width: 250px;
+    }
+  }
+
+  @include tablet {
+    @include sr-s16-h24;
+
+    width: 250px;
+    padding-top: 142px;
+    padding-left: 0;
+
+    &::before {
+      counter-increment: feature-number;
+      content: counter(feature-number);
+      font-size: 280px;
+      line-height: 280px;
+      color: $light-gray;
+      position: absolute;
+      top: -9px;
+      left: 114px;
+      z-index: -10;
+      font-family: $main-font-family;
     }
   }
 }

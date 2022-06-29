@@ -1,19 +1,57 @@
+.gift {
+  padding: 33px 20px 35px;
+
+  @include tablet {
+    padding: 67px 30px 76px 31px;
+  }
+
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-top: 191px;
+  }
+}
+
+.gift__description {
+  @include sr-s16-h20;
+  @include clear-margin;
+
+  color: #ffffff;
+  position: absolute;
+  bottom: 42px;
+  width: 100%;
+  text-align: center;
+
+  @include tablet {
+    @include sr-s16-h20;
+
+    right: 124px;
+    top: 71px;
+    display: block;
+    width: 161px;
+    height: 60px;
+    text-align: left;
+  }
+
+  @include desktop {
+    text-align: center;
+    top: unset;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .gift__container {
-  width: 280px;
+  width: 100%;
   padding-bottom: 290px;
   background: url("../img/gift-bg-mobile.jpg") no-repeat;
   background-size: cover;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/gift-bg-mobile@2x.jpg") no-repeat;
-  }
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/gift-bg-tablet.jpg") no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/gift-bg-tablet@2x.jpg") no-repeat;
-    }
   }
 
   &::before {
@@ -22,5 +60,44 @@
     width: 78px;
     height: 80px;
     background: url("../img/icons/gift.svg") no-repeat;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include tablet {
+      top: 57px;
+      left: 77px;
+      transform: unset;
+    }
+
+    @include desktop {
+      top: 56px;
+      left: 84px;
+    }
+  }
+
+  @include tablet {
+    height: 200px;
+    width: 707px;
+    background: url("../img/gift-bg-tablet.jpg") no-repeat;
+    padding-bottom: 0;
+    margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-bg-tablet@2x.jpg") no-repeat;
+    }
+  }
+
+  @include desktop {
+    width: 245px;
+    height: 289px;
+    padding-bottom: 0;
+    background: url("../img/gift-bg-mobile.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-bg-mobile@2x.jpg") no-repeat;
+    }
   }
 }

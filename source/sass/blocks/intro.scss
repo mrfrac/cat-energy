@@ -1,0 +1,124 @@
+.intro {
+  @include default-block;
+
+  @include desktop {
+    &::after {
+      content: "";
+      display: block;
+      width: 720px;
+      background-image: url("../img/intro-bg-desktop.jpg");
+      background-color: #64a73c;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 694px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+    }
+  }
+}
+
+.intro__wrapper {
+  min-width: 249px;
+  text-align: center;
+  padding: 27px 20px 0;
+
+  @include mobile-only {
+    background-image: url("../img/intro-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 320px 302px;
+  }
+
+  @include tablet {
+    padding-top: 75px;
+    padding-left: 29px;
+    padding-right: 30px;
+  }
+
+  @include desktop {
+    padding: 157px 0 0 110px;
+    position: relative;
+  }
+}
+
+.intro__title {
+  @include mr-s36-h36;
+
+  margin: 0;
+  color: #ffffff;
+
+  @include tablet {
+    @include mr-s60-h60;
+
+    text-align: left;
+    color: #000000;
+    margin-left: 89px;
+  }
+
+  @include desktop {
+    margin-left: 80px;
+  }
+}
+
+.intro__description {
+  @include mr-s14-h14;
+  @include clear-margin;
+
+  margin-top: 25px;
+  margin-bottom: 27px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @include tablet {
+    @include mr-s20-h20;
+
+    color: #000000;
+    text-align: left;
+    margin-left: 89px;
+    margin-bottom: 20px;
+    margin-top: 41px;
+  }
+
+  @include desktop {
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 335px;
+  }
+}
+
+.intro__intro-image {
+  @include tablet {
+    width: 709px;
+    height: 604px;
+  }
+
+  @include desktop {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: 75px;
+    left: 558px;
+  }
+}
+
+.intro__selection-button {
+  height: 40px;
+  box-sizing: border-box;
+  padding: 11px 0;
+
+  @include tablet {
+    width: 244px;
+    position: absolute;
+    top: 370px;
+    left: 120px;
+    height: 54px;
+  }
+
+  @include desktop {
+    top: 390px;
+    left: 190px;
+  }
+}

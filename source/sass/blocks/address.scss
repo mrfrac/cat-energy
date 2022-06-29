@@ -1,0 +1,111 @@
+@mixin address_text {
+  @include sr-s14-h20;
+
+  @include tablet {
+    @include sr-s16-h20;
+  }
+}
+
+.address {
+  &--gray {
+    background-color: $light-gray;
+
+    @include desktop {
+      background-color: #ffffff;
+    }
+  }
+
+  @include desktop {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 107px;
+    height: 400px;
+    box-sizing: border-box;
+
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.address__wrapper {
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title street"
+    "title city";
+
+  @include tablet {
+    padding: 60px 70px 56px 70px;
+  }
+
+  @include desktop {
+    width: 425px;
+    background-color: #ffffff;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding-left: 79px;
+    padding-right: 61px;
+    grid-column-gap: 72px;
+  }
+}
+
+.address__title {
+  @include mr-s16-h20;
+  @include clear-margin;
+
+  grid-area: title;
+  text-transform: uppercase;
+  color: #111111;
+
+  @include tablet {
+    @include mr-s20-h26;
+
+    width: 172px;
+  }
+
+  @include desktop {
+    width: 163px;
+  }
+}
+
+.address__street {
+  @include address_text;
+
+  grid-area: street;
+  color: $dark-gray;
+
+  @include tablet {
+    width: 160px;
+    justify-self: right;
+    align-self: baseline;
+    text-align: right;
+  }
+
+  @include desktop {
+    justify-self: left;
+    text-align: left;
+    width: 155px;
+  }
+}
+
+.address__city {
+  @include address_text;
+
+  grid-area: city;
+  color: $dark-gray;
+
+  @include tablet {
+    width: 160px;
+    justify-self: right;
+    align-self: end;
+    text-align: right;
+  }
+
+  @include desktop {
+    justify-self: left;
+    text-align: left;
+  }
+}

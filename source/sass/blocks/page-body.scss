@@ -1,0 +1,8 @@
+.page-body {
+  font-family: $main-font-family;
+  margin: 0;
+
+  @include desktop {
+    overflow-x: hidden;
+  }
+}

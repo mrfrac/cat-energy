@@ -1,0 +1,31 @@
+.button {
+  @include mr-s14-h18;
+
+  display: block;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  padding: 14px 0;
+
+  &--select-program {
+    @include mr-s14-h18;
+    padding-top: 10px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  @include tablet {
+    @include mr-s20-h20;
+
+    padding: 17px 0;
+  }
+}
