@@ -5,3 +5,13 @@
   justify-content: center;
   column-gap: 24px;
 }
+
+.social__item-link {
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
