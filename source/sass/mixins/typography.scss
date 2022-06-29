@@ -56,6 +56,10 @@
   @include typography-template(20px, 20px);
 }
 
+@mixin mb-s20-h20 {
+  @include typography-template(20px, 20px, $main-font-family, 500);
+}
+
 @mixin mr-s20-h21 {
   @include typography-template(20px, 21px);
 }
