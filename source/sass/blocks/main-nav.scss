@@ -74,12 +74,12 @@
   @include desktop {
     @include mr-s20-h30;
   }
+}
 
-  &--active {
-    &::before {
-      @include tablet {
-        display: block;
-      }
+.main-nav__link--active {
+  &::before {
+    @include tablet {
+      display: block;
     }
   }
 }

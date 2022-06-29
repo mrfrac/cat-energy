@@ -157,31 +157,6 @@
   margin-bottom: 40px;
   text-transform: uppercase;
 
-  &-label {
-    @include tablet {
-      display: block;
-      margin-top: 11px;
-      margin-right: 3px;
-    }
-
-    @include desktop {
-      display: unset;
-      margin-right: 63px;
-    }
-  }
-
-  &-price {
-    @include tablet {
-      display: block;
-      margin-top: 9px;
-      margin-right: 1px;
-    }
-
-    @include desktop {
-      display: unset;
-    }
-  }
-
   @include tablet {
     @include mr-s20-h20;
 
@@ -193,5 +168,30 @@
     margin-left: 0;
     position: relative;
     top: 13px;
+  }
+}
+
+.example__cost-label {
+  @include tablet {
+    display: block;
+    margin-top: 11px;
+    margin-right: 3px;
+  }
+
+  @include desktop {
+    display: unset;
+    margin-right: 63px;
+  }
+}
+
+.example__cost-price {
+  @include tablet {
+    display: block;
+    margin-top: 9px;
+    margin-right: 1px;
+  }
+
+  @include desktop {
+    display: unset;
   }
 }

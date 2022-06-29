@@ -84,34 +84,6 @@
     }
   }
 
-  &--leaf {
-    &::after {
-      background-image: url("../img/icons/leaf.svg");
-    }
-  }
-
-  &--tub {
-    &::after {
-      background-image: url("../img/icons/tub.svg");
-    }
-  }
-
-  &--eat {
-    &::after {
-      background-image: url("../img/icons/eat.svg");
-    }
-  }
-
-  &--alarm {
-    &::after {
-      background-image: url("../img/icons/alarm.svg");
-    }
-
-    @include desktop {
-      width: 250px;
-    }
-  }
-
   @include tablet {
     @include sr-s16-h24;
 
@@ -131,5 +103,33 @@
       z-index: -10;
       font-family: $main-font-family;
     }
+  }
+}
+
+.features__item--leaf {
+  &::after {
+    background-image: url("../img/icons/leaf.svg");
+  }
+}
+
+.features__item--tub {
+  &::after {
+    background-image: url("../img/icons/tub.svg");
+  }
+}
+
+.features__item--eat {
+  &::after {
+    background-image: url("../img/icons/eat.svg");
+  }
+}
+
+.features__item--alarm {
+  &::after {
+    background-image: url("../img/icons/alarm.svg");
+  }
+
+  @include desktop {
+    width: 250px;
   }
 }

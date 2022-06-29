@@ -105,6 +105,8 @@
 }
 
 .intro__selection-button {
+  @include mr-s14-h18;
+
   height: 40px;
   box-sizing: border-box;
   padding: 11px 0;

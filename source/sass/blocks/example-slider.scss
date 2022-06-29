@@ -46,35 +46,35 @@
   @include desktop {
     margin-top: -80px;
   }
+}
 
-  &--fat {
-    @include tablet {
-      width: 700px;
-      height: 100%;
-      max-width: none;
-      transform: translateX(-26px);
-    }
-
-    @include desktop {
-      transform: translate(-10px, 75px);
-    }
+.example-slider__image--fat {
+  @include tablet {
+    width: 700px;
+    height: 100%;
+    max-width: none;
+    transform: translateX(-26px);
   }
 
-  &--slim {
-    @include mobile-only {
-      display: none;
-    }
+  @include desktop {
+    transform: translate(-10px, 75px);
+  }
+}
 
-    @include tablet {
-      width: 570px;
-      height: 100%;
-      max-width: none;
-      transform: translateX(-256px);
-    }
+.example-slider__image--slim {
+  @include mobile-only {
+    display: none;
+  }
 
-    @include desktop {
-      transform: translate(-256px, 80px);
-    }
+  @include tablet {
+    width: 570px;
+    height: 100%;
+    max-width: none;
+    transform: translateX(-256px);
+  }
+
+  @include desktop {
+    transform: translate(-256px, 80px);
   }
 }
 
