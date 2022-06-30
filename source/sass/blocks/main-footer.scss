@@ -64,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 57px 30px 43px;
+    padding: 57px 30px 55px;
   }
 
   @include desktop {
@@ -103,6 +103,7 @@
     padding: 0;
     border-bottom: unset;
     margin-left: 27px;
+    margin-top: 1px;
   }
 
   @include desktop {
@@ -117,5 +118,11 @@
   @include tablet {
     padding: 0;
     border-bottom: unset;
+  }
+}
+
+.main-footer__logo-icon {
+  @include tablet {
+    margin-top: 3px;
   }
 }
