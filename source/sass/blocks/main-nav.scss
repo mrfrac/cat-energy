@@ -103,17 +103,17 @@
 
 .main-nav--index {
   z-index: 2;
+}
 
-  .main-nav__link {
-    &::before {
-      @include desktop {
-        background-color: #ffffff;
-      }
-    }
-
+.main-nav--index .main-nav__link {
+  &::before {
     @include desktop {
-      color: #ffffff;
+      background-color: #ffffff;
     }
+  }
+
+  @include desktop {
+    color: #ffffff;
   }
 }
 
