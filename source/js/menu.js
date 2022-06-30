@@ -1,8 +1,10 @@
 (function () {
   const button = document.querySelector(".main-nav__toggle");
   const mainNav = document.querySelector(".main-nav");
+  const mainContainer = document.querySelector(".main-container");
 
   mainNav.classList.remove("main-nav--nojs");
+  mainContainer.classList.remove("main-container--nojs");
   mainNav.classList.add("main-nav--closed");
 
   button.addEventListener("click", () => {
