@@ -10,11 +10,6 @@
   text-align: center;
   padding: 14px 0;
 
-  &--select-program {
-    @include mr-s14-h18;
-    padding-top: 10px;
-  }
-
   &:hover {
     background-color: #5eaa2f;
   }

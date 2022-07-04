@@ -17,6 +17,7 @@
   appearance: none;
   background-color: unset;
   margin: 0;
+  position: relative;
 
   &:checked::before,
   &:not(:checked)::before {
@@ -69,19 +70,19 @@
     background-color: $basic-green;
     border-radius: 100%;
     position: absolute;
-    top: -9px;
-    left: -22px;
+    top: 9px;
+    left: 10px;
 
     @include tablet {
       width: 18px;
       height: 18px;
-      top: -12px;
-      left: -30px;
+      top: 11px;
+      left: 11px;
     }
 
     @include desktop {
-      top: 36px;
-      left: 41px;
+      top: 11px;
+      left: 12px;
     }
   }
 
@@ -95,14 +96,15 @@
     mask-image: url("../img/icons/check.svg");
     mask-size: 18px 14px;
     position: absolute;
-    top: -7px;
-    left: -24px;
+    top: 8px;
+    left: 6px;
 
     @include tablet {
+      mask-size: 24px 19px;
       width: 24px;
       height: 19px;
-      top: -11px;
-      left: -32px;
+      top: 10px;
+      left: 8px;
     }
   }
 

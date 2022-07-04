@@ -46,12 +46,14 @@
 .gift__container {
   width: 100%;
   padding-bottom: 290px;
-  background: url("../img/gift-bg-mobile.jpg") no-repeat;
+  background-image: url("../img/gift-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: $basic-green;
   background-size: cover;
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/gift-bg-mobile@2x.jpg") no-repeat;
+    background-image: url("../img/gift-bg-mobile@2x.jpg");
   }
 
   &::before {
@@ -59,7 +61,7 @@
     position: absolute;
     width: 78px;
     height: 80px;
-    background: url("../img/icons/gift.svg") no-repeat;
+    background-image: url("../img/icons/gift.svg");
     top: 59px;
     left: 50%;
     transform: translateX(-50%);

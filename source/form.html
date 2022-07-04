@@ -42,7 +42,7 @@
     </div>
   </header>
 
-  <main class="main-container form">
+  <main class="main-container main-container--nojs form">
     <div class="form__wrapper">
       <div class="form__header">
         <h1 class="form__header-title">Подбор программы</h1>
@@ -92,24 +92,20 @@
         </div>
         <fieldset class="form__block form__contacts">
           <div class="form__block-wrapper">
-            <legend class="form__block-title form__block-title--lined"><span class="form__block-title-text">Контактные данные (владельца кота)</span></legend>
+            <div class="form__block-title form__block-title--lined"><span class="form__block-title-text">Контактные данные (владельца кота)</span></div>
             <div class="form__contacts-list">
               <div class="text-control form__contacts-item">
                 <label class="text-control__label" for="email">E-mail:*</label>
                 <div class="text-control__input-group">
                   <input class="text-control__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                  <div class="text-control__input-addon">
-                    <div class="text-control__input-addon--email"></div>
-                  </div>
+                  <div class="text-control__input-addon-email"></div>
                 </div>
               </div>
               <div class="text-control form__contacts-item">
                 <label class="text-control__label" for="phone">Телефон:*</label>
                 <div class="text-control__input-group">
                   <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-                  <div class="text-control__input-addon">
-                    <div class="text-control__input-addon--phone"></div>
-                  </div>
+                  <div class="text-control__input-addon-phone"></div>
                 </div>
               </div>
             </div>
@@ -117,7 +113,7 @@
         </fieldset>
         <fieldset class="form__block form__comment">
           <div class="form__block-wrapper">
-            <legend class="form__block-title form__block-title--lined"><span class="form__block-title-text">Комментарий</span></legend>
+            <div class="form__block-title form__block-title--lined"><span class="form__block-title-text">Комментарий</span></div>
             <div class="text-control">
               <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
@@ -125,7 +121,7 @@
         </fieldset>
         <fieldset class="form__block form__more">
           <div class="form__block-wrapper">
-            <legend class="form__block-title form__block-title--lined"><span class="form__block-title-text">Дополнительно</span></legend>
+            <div class="form__block-title form__block-title--lined"><span class="form__block-title-text">Дополнительно</span></div>
             <ul class="form__more-list">
               <li class="form__more-item">
                 <div class="choose-control">
@@ -180,7 +176,7 @@
         </div>
       </section>
       <picture>
-        <source media="(min-width: 1440x)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+        <source media="(min-width: 1440px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
@@ -226,7 +222,7 @@
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <p class="copyright__text">HTML Academy</p>
-              <svg class="copyright__logo" width="40" height="40" viewBox="0 0 60 60">
+              <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34">
                 <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
@@ -235,5 +231,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.min.js"></script>
 </body>
 </html>

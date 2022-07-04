@@ -21,11 +21,11 @@
   align-items: center;
 
   @include tablet {
-    padding: 24px 34px 24px 30px;
+    padding: 20px 34px 24px 30px;
   }
 
   @include desktop {
-    padding: 51px 112px 32px 110px;
+    padding: 53px 112px 32px 110px;
   }
 }
 

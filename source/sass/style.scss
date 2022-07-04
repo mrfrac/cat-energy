@@ -1,10 +1,12 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
-@import "common";
+@import "global";
 @import "blocks/page-body";
+@import "blocks/button";
 @import "blocks/main-header";
 @import "blocks/main-footer";
+@import "blocks/main-container";
 @import "blocks/intro";
 @import "blocks/main-nav";
 @import "blocks/features";
@@ -15,7 +17,6 @@
 @import "blocks/address";
 @import "blocks/social";
 @import "blocks/copyright";
-@import "blocks/button";
 @import "blocks/choose-control";
 @import "blocks/text-control";
 @import "blocks/form";

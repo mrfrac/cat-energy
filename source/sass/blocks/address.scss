@@ -7,14 +7,6 @@
 }
 
 .address {
-  &--gray {
-    background-color: $light-gray;
-
-    @include desktop {
-      background-color: #ffffff;
-    }
-  }
-
   @include desktop {
     position: relative;
     padding-top: 95px;
@@ -24,6 +16,14 @@
 
     max-width: 1220px;
     margin: 0 auto;
+  }
+}
+
+.address--gray {
+  background-color: $light-gray;
+
+  @include desktop {
+    background-color: #ffffff;
   }
 }
 

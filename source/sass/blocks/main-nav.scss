@@ -4,7 +4,7 @@
 
 .main-nav__toggle {
   width: 24px;
-  height: 16px;
+  height: 24px;
   cursor: pointer;
   background-color: #ffffff;
   padding: 0;
@@ -37,6 +37,24 @@
   }
 }
 
+.main-nav__item {
+  @include mobile-only {
+    background-color: #ffffff;
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 22px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  &:first-of-type {
+    @include mobile-only {
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+}
+
 .main-nav__link {
   @include mr-s18-h24;
 
@@ -45,6 +63,10 @@
   color: #000000;
   cursor: pointer;
   position: relative;
+
+  @include mobile-only {
+    @include mb-s20-h20;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -56,7 +78,7 @@
 
   &::before {
     content: "";
-    width: 98%;
+    width: 100%;
     height: 2px;
     background-color: $basic-green;
     left: 0;
@@ -65,8 +87,6 @@
     position: absolute;
 
     @include desktop {
-      width: 95%;
-      left: 1px;
       top: 35px;
     }
   }
@@ -74,28 +94,79 @@
   @include desktop {
     @include mr-s20-h30;
   }
+}
 
-  &--active {
-    &::before {
-      @include tablet {
-        display: block;
-      }
+.main-nav__link--active {
+  &::before {
+    @include tablet {
+      display: block;
     }
   }
 }
 
 .main-nav--index {
   z-index: 2;
+}
 
-  .main-nav__link {
-    &::before {
-      @include desktop {
-        background-color: #ffffff;
-      }
+.main-nav--index .main-nav__link {
+  &::before {
+    @include desktop {
+      background-color: #ffffff;
+    }
+  }
+
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  @include mobile-only {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @include mobile-only {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @include mobile-only {
+    background-color: rgba(1, 1, 1, 0);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      right: 20px;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
     }
 
-    @include desktop {
-      color: #ffffff;
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
     }
   }
 }

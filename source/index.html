@@ -25,7 +25,7 @@
       <a class="main-header__text-link">
         <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
       </a>
-      <nav class="main-nav main-nav--index">
+      <nav class="main-nav main-nav--index main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -42,7 +42,7 @@
     </div>
   </header>
 
-  <main class="main-container">
+  <main class="main-container main-container--nojs">
     <section class="intro">
       <div class="intro__wrapper">
         <h1 class="intro__title">Функциональное <br> питание для котов</h1>
@@ -55,7 +55,7 @@
           <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg, img/index-can-tablet@2x.jpg 2x">
           <img class="intro__intro-image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro со вкусом курицы" width="280" height="270">
         </picture>
-        <a class="intro__selection-button button button--select-program" href="form.html">Подобрать программу</a>
+        <a class="intro__selection-button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -160,7 +160,7 @@
         </div>
       </section>
       <picture>
-        <source media="(min-width: 1440x)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+        <source media="(min-width: 1440px)" type="image/webp" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
@@ -206,7 +206,7 @@
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <p class="copyright__text">HTML Academy</p>
-              <svg class="copyright__logo" width="40" height="40" viewBox="0 0 60 60">
+              <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34">
                 <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
@@ -215,5 +215,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.min.js"></script>
 </body>
 </html>

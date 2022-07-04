@@ -185,14 +185,6 @@
   padding-top: 26px;
   padding-bottom: 10px;
 
-  &-list {
-    @include desktop {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 5.42%;
-    }
-  }
-
   .form__block-title {
     @include default-block-title(207px);
 
@@ -215,6 +207,14 @@
   @include desktop {
     @include default-form-block(110px, 110px);
     padding-bottom: 46px;
+  }
+}
+
+.form__contacts-list {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5.42%;
   }
 }
 
@@ -287,33 +287,6 @@
     }
   }
 
-  &-list {
-    @include clear-list-styles;
-
-    @include tablet {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 19px;
-      grid-column-gap: 54px;
-    }
-
-    @include desktop {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  &-item {
-    display: block;
-
-    margin-bottom: 10px;
-
-    @include desktop {
-      width: 221px;
-      margin-right: 50px;
-    }
-  }
-
   @include tablet {
     @include default-form-block(70px, 67px);
 
@@ -324,6 +297,33 @@
     @include default-form-block(110px, 207px);
 
     padding-bottom: 47px;
+  }
+}
+
+.form__more-list {
+  @include clear-list-styles;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 19px;
+    grid-column-gap: 54px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__more-item {
+  display: block;
+
+  margin-bottom: 10px;
+
+  @include desktop {
+    width: 221px;
+    margin-right: 50px;
   }
 }
 

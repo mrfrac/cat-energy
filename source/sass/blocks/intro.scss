@@ -32,7 +32,7 @@
   }
 
   @include tablet {
-    padding-top: 75px;
+    padding-top: 71px;
     padding-left: 29px;
     padding-right: 30px;
   }
@@ -105,16 +105,21 @@
 }
 
 .intro__selection-button {
+  @include mr-s14-h18;
+
   height: 40px;
   box-sizing: border-box;
-  padding: 11px 0;
+  padding: 12px 0;
 
   @include tablet {
+    @include mr-s20-h20;
+
     width: 244px;
     position: absolute;
-    top: 370px;
+    top: 365px;
     left: 120px;
     height: 54px;
+    padding-top: 17px;
   }
 
   @include desktop {
